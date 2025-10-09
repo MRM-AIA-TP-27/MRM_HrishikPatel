@@ -1,1 +1,18 @@
-# Task 4 & 5: Branching, Documentation, and Merging\n\nThis set of tasks demonstrated the workflow for creating a feature branch (`Temp`), making isolated changes (adding `Task_3.md`), and then integrating those changes back into the primary development line (`main`) using a merge.\n\n### Git Commands Used (Task 4: Branching and Pushing):\n\n1.  **`git checkout -b Temp`**: Created a new branch named `Temp` and immediately switched the working directory to this new branch.\n2.  **`touch Task_3.md` or creating the file using echo**: Created the documentation file required for Task 3.\n3.  **`git add Task_3.md`**: Staged the new file.\n4.  **`git commit -m "Task 4: Added Task_3.md documentation"`**: Committed the file to the `Temp` branch.\n5.  **`git push -u origin Temp`**: Pushed the new `Temp` branch to the remote repository for the first time.\n\n### Git Commands Used (Task 5: Merging and Finalizing):\n\n1.  **`git checkout main`**: Switched back to the `main` branch, preparing it for the merge.\n2.  **`git merge Temp`**: Integrated the changes from the `Temp` branch into the current `main` branch (a fast-forward merge).\n3.  **`touch Task_4_5.md` or creating the file using echo**: Created the final documentation file for this task.\n4.  **`git add Task_4_5.md`**: Staged the new file.\n5.  **`git commit -m "Task 5: Merged Temp branch and added Task_4_5.md"`**: Committed the merge result and the new documentation file.\n6.  **`git push`**: Pushed the updated `main` branch, including the merged content and the new documentation, to GitHub.
+# 1. Switch back to the 'main' branch
+git checkout main
+
+# 2. Merge the changes from the 'Temp' branch into the current 'main' branch
+git merge Temp
+
+# 3. Create the final documentation file (Task_4_5.md)
+# The content is generated below and piped directly into the file.
+echo "# Task 4 & 5: Branching, Documentation, and Merging\n\nThis set of tasks demonstrated the workflow for creating a feature branch (\`Temp\`), making isolated changes (adding \`Task_3.md\`), and then integrating those changes back into the primary development line (\`main\`) using a merge.\n\n### Git Commands Used (Task 4: Branching and Pushing):\n\n1.  **\`git checkout -b Temp\`**: Created a new branch named \`Temp\` and immediately switched the working directory to this new branch.\n2.  **\`touch Task_3.md\` or creating the file using echo**: Created the documentation file required for Task 3.\n3.  **\`git add Task_3.md\`**: Staged the new file.\n4.  **\`git commit -m \"Task 4: Added Task_3.md documentation\"\`**: Committed the file to the \`Temp\` branch.\n5.  **\`git push -u origin Temp\`**: Pushed the new \`Temp\` branch to the remote repository for the first time.\n\n### Git Commands Used (Task 5: Merging and Finalizing):\n\n1.  **\`git checkout main\`**: Switched back to the \`main\` branch, preparing it for the merge.\n2.  **\`git merge Temp\`**: Integrated the changes from the \`Temp\` branch into the current \`main\` branch (a fast-forward merge).\n3.  **\`touch Task_4_5.md\` or creating the file using echo**: Created the final documentation file for this task.\n4.  **\`git add Task_4_5.md\`**: Staged the new file.\n5.  **\`git commit -m \"Task 5: Merged Temp branch and added Task_4_5.md\"\`**: Committed the merge result and the new documentation file.\n6.  **\`git push\`**: Pushed the updated \`main\` branch, including the merged content and the new documentation, to GitHub." > Task_4_5.md
+
+# 4. Stage the new documentation file
+git add Task_4_5.md
+
+# 5. Commit the merge result and the new documentation file
+git commit -m "Task 5: Merged Temp branch and finalized documentation"
+
+# 6. Push the final changes to the remote repository
+git push
