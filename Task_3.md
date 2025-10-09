@@ -1,1 +1,13 @@
-# Task 3: CSV File Integration\n\nThis task involved downloading a provided CSV file and integrating it into the existing `GitHub_task` folder within the repository.\n\n### Git Commands Used:\n\n1.  **`touch data.csv`**: Created a local placeholder file representing the downloaded data.\n2.  **`git add data.csv`**: Staged the new `data.csv` file.\n3.  **`git commit -m "Task 3: Added data.csv file"`**: Committed the addition of the data file.\n4.  **`git pull origin main`**: Integrated remote changes (Task_1.md) with local changes (data.csv).\n5.  **`git push`**: Pushed the merged changes to the remote `main` branch.
+# Assuming you are in the ~/Desktop/MRM/GitHub_task directory
+
+# 1. Stage the new data.csv file (just in case it wasn't staged before)
+git add data.csv
+
+# 2. Commit the change (if not already committed)
+git commit -m "Task 3: Added data.csv file"
+
+# 3. Pull remote changes (Task_1.md) and merge them locally
+git pull origin main
+
+# 4. Push the merged result to GitHub
+git push
