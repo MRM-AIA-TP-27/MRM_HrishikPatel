@@ -5,8 +5,8 @@ def detect_yellow_balls(frame):
     # Convert to HSV colour kaanke lighting change thava thi HSV ma aetlu farak naa pade
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     # Define HSV range for yellow colour (adjusted for lighting conditions)
-    yellow1 = np.array([35, 100, 100])
-    yellow2 = np.array([65, 100, 100])
+    yellow1 = np.array([18, 80, 80])
+    yellow2 = np.array([90, 255, 255])
 
     # Threshold the HSV image to get only yellow colours
     range = cv2.inRange(hsv, yellow1, yellow2)
