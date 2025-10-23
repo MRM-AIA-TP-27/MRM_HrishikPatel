@@ -15,6 +15,7 @@ def detect_yellow_balls(frame):
     blur = cv2.GaussianBlur(range,(11,11),sigmaX=10,sigmaY=10)
     #sigma x ane aigma y aaju baaju nu circle na pixels ne use karine mean laine
     #wadhaare blur thay aena maate che
+    cv2.imshow('Processed Mask (Debug)', blur)
 
     # Detect circles using Hough Circle Transform
     circles = cv2.HoughCircles(
