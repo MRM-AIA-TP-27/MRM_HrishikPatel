@@ -9,3 +9,6 @@ My approach was to kind of replicate the demo talker and listner nodes but in wa
 
 ### Messages/Services
 - `std_msgs/msg/String`: Used for transmitting the chat text concatenated with the sender's node name and the counter
+
+### YT Link
+https://youtu.be/Yt2dgshRXDE
