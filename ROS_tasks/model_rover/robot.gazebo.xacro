@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!--Wheels-->
+  <gazebo>
+    <plugin name="rover_diff_drive" filename="libgazebo_ros_diff_drive.so">
+      <num_wheel_pairs>2</num_wheel_pairs>
+      <left_joint>front_left_joint</left_joint>
+      <left_joint>rear_left_joint</left_joint>
+      <right_joint>front_right_joint</right_joint>
+      <right_joint>rear_right_joint</right_joint>
+      <wheel_separation>0.48</wheel_separation>
+      <wheel_diameter>0.16</wheel_diameter>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+      <publish_wheel_tf>true</publish_wheel_tf>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+    </plugin>
+  </gazebo>
+
+<!--LiDAR-->
+  <gazebo reference="laser_frame">
+    <sensor type="ray" name="lidar">
+      <update_rate>20</update_rate>
+      <visualize>true</visualize>
+      <ray>
+        <scan><horizontal><samples>360</samples><min_angle>-3.14159</min_angle><max_angle>3.14159</max_angle></horizontal></scan>
+        <range><min>0.12</min><max>10.0</max></range>
+      </ray>
+      <plugin name="gazebo_ros_laser" filename="libgazebo_ros_ray_sensor.so">
+        <ros><remapping>~/out:=scan</remapping></ros>
+        <output_type>sensor_msgs/LaserScan</output_type>
+        <frame_name>laser_frame</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+<!--StereoCam-->
+  <gazebo reference="stereocamera_link">
+    <sensor name="camera" type="depth">
+      <update_rate>30.0</update_rate>
+      <visualize>true</visualize>
+      <camera>
+        <horizontal_fov>1.50098</horizontal_fov>
+        <image><width>640</width><height>480</height><format>R8G8B8</format></image>
+        <clip><near>0.1</near><far>10.0</far></clip>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <ros>
+          <remapping>camera/image_raw:=color/image_raw</remapping>
+          <remapping>camera/depth/image_raw:=depth/image_raw</remapping>
+          <remapping>camera/points:=depth/color/points</remapping>
+        </ros>
+        <camera_name>camera</camera_name>
+        <frame_name>stereocamera_link_optical</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+<!--IMU-->
+  <gazebo reference="imu_link">
+    <sensor type="imu" name="imu_sensor">
+      <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+        <ros><remapping>~/out:=imu</remapping></ros>
+        <output_type>sensor_msgs/Imu</output_type>
+        <frame_name>imu_link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+<!--GPS-->
+  <gazebo reference="gps_link">
+    <sensor type="gps" name="gps_sensor">
+      <plugin name="gps_plugin" filename="libgazebo_ros_gps_sensor.so">
+        <ros><remapping>~/out:=gps/fix</remapping></ros>
+        <output_type>sensor_msgs/NavSatFix</output_type>
+        <frame_name>gps_link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+<!--Colours-->
+  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+  <gazebo reference="front_left_wheel">
+    <material>Gazebo/Black</material>
+  </gazebo>
+  <gazebo reference="front_right_wheel">
+    <material>Gazebo/Black</material>
+  </gazebo>
+  <gazebo reference="rear_left_wheel">
+    <material>Gazebo/Black</material>
+  </gazebo>
+  <gazebo reference="rear_right_wheel">
+    <material>Gazebo/Black</material>
+  </gazebo>
+  <gazebo reference="laser_frame">
+    <material>Gazebo/Yellow</material>
+  </gazebo>
+  <gazebo reference="stereocamera_link">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+  <gazebo reference="imu_link">
+    <material>Gazebo/Red</material>
+  </gazebo>
+  <gazebo reference="gps_rod">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+  <gazebo reference="gps_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
+</robot>
