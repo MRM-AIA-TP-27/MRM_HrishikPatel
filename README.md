@@ -8,4 +8,8 @@ OPENCV contains all the opencv tasks  assigned befor ros2 tasks
 
 Reports contains sensor reports and the ros report
 
-ROS_tasks contains tasks for ROS@ Humble
+ROS_tasks contains tasks for ROS2 Humble
+
+ML_TASKS contains Basic Regression Models
+
+ML_Course conatins my Deep Learning Specialization Certificates
