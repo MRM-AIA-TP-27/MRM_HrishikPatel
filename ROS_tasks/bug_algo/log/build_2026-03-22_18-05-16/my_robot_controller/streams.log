@@ -1,0 +1,30 @@
+[0.009s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[0.055s] [ 50%] Built target obstacle_detector
+[0.061s] [ 75%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[4.019s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In member function ‘[01m[Kvoid GPSNavigator::controlLoop()[m[K’:
+[4.019s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:207:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kpt[m[K’ was not declared in this scope
+[4.019s]   207 |         double angle = std::atan2([01;31m[Kpt[m[K.y, pt.x);   // [-pi, pi]
+[4.019s]       |                                   [01;31m[K^~[m[K
+[4.021s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:207:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.021s]   207 |         double [01;35m[Kangle[m[K = std::atan2(pt.y, pt.x);   // [-pi, pi]
+[4.021s]       |                [01;35m[K^~~~~[m[K
+[4.021s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:208:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ko_dist[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.021s]   208 |         double [01;35m[Ko_dist[m[K  = std::sqrt(pt.x*pt.x + pt.y*pt.y);
+[4.022s]       |                [01;35m[K^~~~~~[m[K
+[4.022s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:209:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_left_angle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.022s]   209 |         double [01;35m[Kmin_left_angle[m[K = 0.0;
+[4.022s]       |                [01;35m[K^~~~~~~~~~~~~~[m[K
+[4.022s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:210:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_right_angle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.022s]   210 |         double [01;35m[Kmin_right_angle[m[K = 0.0;
+[4.022s]       |                [01;35m[K^~~~~~~~~~~~~~~[m[K
+[4.022s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:212:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_left_clear[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.022s]   212 |         double [01;35m[Kmax_left_clear[m[K = 0.0;
+[4.022s]       |                [01;35m[K^~~~~~~~~~~~~~[m[K
+[4.022s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:213:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmax_right_clear[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.022s]   213 |         double [01;35m[Kmax_right_clear[m[K = 0.0;
+[4.022s]       |                [01;35m[K^~~~~~~~~~~~~~~[m[K
+[8.314s] gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+[8.314s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gps_navigator.dir/all] Error 2
+[8.314s] gmake: *** [Makefile:146: all] Error 2
+[8.316s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8

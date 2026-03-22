@@ -1,0 +1,40 @@
+[0.009s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[0.045s] [35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[0.045s] [35m[1mConsolidate compiler generated dependencies of target obstacle_detector[0m
+[0.061s] [ 75%] Built target gps_navigator
+[0.061s] [ 75%] [32mBuilding CXX object CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o[0m
+[3.750s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:[m[K In member function ‘[01m[Kvoid ObstacleDetectionNode::processPointCloud()[m[K’:
+[3.750s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:111:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.750s]   111 |     double [01;35m[Kmin_distance[m[K = std::numeric_limits<double>::max();
+[3.750s]       |            [01;35m[K^~~~~~~~~~~~[m[K
+[3.750s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:112:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kobstacle_within_range[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.750s]   112 |     bool [01;35m[Kobstacle_within_range[m[K = false;
+[3.750s]       |          [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[9.079s] [100%] [32m[1mLinking CXX executable obstacle_detector[0m
+[10.400s] [100%] Built target obstacle_detector
+[10.434s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[10.441s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hrishik/robot_ws/build/my_robot_controller
+[10.447s] -- Install configuration: ""
+[10.447s] -- Execute custom install script
+[10.447s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/lib/my_robot_controller/gps_navigator
+[10.447s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/lib/my_robot_controller/obstacle_detector
+[10.447s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/launch/navigation.launch.py
+[10.448s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/urdf/robot.gazebo.xacro
+[10.448s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/urdf/robot.urdf.xacro
+[10.448s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/worlds/ground.world
+[10.448s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/ament_index/resource_index/package_run_dependencies/my_robot_controller
+[10.448s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/ament_index/resource_index/parent_prefix_path/my_robot_controller
+[10.448s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/environment/ament_prefix_path.sh
+[10.448s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/environment/ament_prefix_path.dsv
+[10.448s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/environment/path.sh
+[10.448s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/environment/path.dsv
+[10.449s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/local_setup.bash
+[10.449s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/local_setup.sh
+[10.449s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/local_setup.zsh
+[10.449s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/local_setup.dsv
+[10.449s] -- Symlinking: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/package.dsv
+[10.456s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/ament_index/resource_index/packages/my_robot_controller
+[10.456s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/cmake/my_robot_controllerConfig.cmake
+[10.456s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/cmake/my_robot_controllerConfig-version.cmake
+[10.456s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/package.xml
+[10.458s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hrishik/robot_ws/build/my_robot_controller

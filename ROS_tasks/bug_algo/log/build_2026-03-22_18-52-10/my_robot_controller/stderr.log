@@ -1,0 +1,13 @@
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In member function ‘[01m[Kvoid GPSNavigator::controlLoop()[m[K’:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:230:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kelse[m[K’
+  230 |             [01;31m[Kelse[m[K
+      |             [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:192:9:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+  192 |         [01;36m[K{[m[K
+      |         [01;36m[K^[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:180:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw_err[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  180 |         double [01;35m[Kyaw_err[m[K = normalize(target_yaw - cur_yaw_);
+      |                [01;35m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gps_navigator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

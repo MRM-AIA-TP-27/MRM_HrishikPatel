@@ -1,0 +1,7 @@
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Kpcl_conversions/pcl_conversions.h: No such file or directory
+    7 | #include [01;31m[K<pcl_conversions/pcl_conversions.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gps_navigator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

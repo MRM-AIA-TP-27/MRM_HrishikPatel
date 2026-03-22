@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable obstacle_detector[0m
+[100%] [32m[1mLinking CXX executable gps_navigator[0m
+[100%] Built target gps_navigator
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/obstacle_detector.dir/build.make:299: obstacle_detector] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/obstacle_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

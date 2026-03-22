@@ -1,0 +1,25 @@
+[0.008s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target obstacle_detector[0m
+[0.056s] [ 25%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[0.061s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o[0m
+[4.011s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:[m[K In constructor ‘[01m[KObstacleDetectionNode::ObstacleDetectionNode()[m[K’:
+[4.011s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:28:7:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_obs_time_[m[K’ was not declared in this scope
+[4.011s]    28 |       [01;31m[Klast_obs_time_[m[K = this->get_clock()->now();
+[4.011s]       |       [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.026s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:29:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_start_time_[m[K’ was not declared in this scope
+[4.026s]    29 |         [01;31m[Kstate_start_time_[m[K = this->get_clock()->now();
+[4.026s]       |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[4.063s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:[m[K In member function ‘[01m[Kvoid ObstacleDetectionNode::processPointCloud()[m[K’:
+[4.063s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:115:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.063s]   115 |     double [01;35m[Kmin_distance[m[K = std::numeric_limits<double>::max();
+[4.063s]       |            [01;35m[K^~~~~~~~~~~~[m[K
+[4.063s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:116:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kobstacle_within_range[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.063s]   116 |     bool [01;35m[Kobstacle_within_range[m[K = false;
+[4.063s]       |          [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[6.427s] gmake[2]: *** [CMakeFiles/obstacle_detector.dir/build.make:76: CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o] Error 1
+[6.427s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/obstacle_detector.dir/all] Error 2
+[6.427s] gmake[1]: *** Waiting for unfinished jobs....
+[12.262s] [ 75%] [32m[1mLinking CXX executable gps_navigator[0m
+[13.218s] [ 75%] Built target gps_navigator
+[13.218s] gmake: *** [Makefile:146: all] Error 2
+[13.220s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8

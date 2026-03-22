@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[ 50%] Built target obstacle_detector
+[ 75%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[100%] [32m[1mLinking CXX executable gps_navigator[0m

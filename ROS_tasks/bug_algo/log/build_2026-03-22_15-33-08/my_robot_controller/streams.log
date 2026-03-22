@@ -1,0 +1,34 @@
+[0.009s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[0.056s] [ 50%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[3.564s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In member function ‘[01m[Kvoid TangentBugLite::gps_cb(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.564s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:84:20:[m[K [01;31m[Kerror: [m[Kuse of ‘[01m[Know[m[K’ before deduction of ‘[01m[Kauto[m[K’
+[3.564s]    84 |         auto now = [01;31m[Know[m[K(); // Use the node clock
+[3.564s]       |                    [01;31m[K^~~[m[K
+[3.564s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:85:28:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+[m[K’ (operand types are ‘[01m[Kint[m[K’ and ‘[01m[Krclcpp::Time[m[K’)
+[3.564s]    85 |         double elapsed = ([32m[K1[m[K[01;31m[K+[m[K [34m[Kstate_start_time_[m[K).seconds();
+[3.564s]       |                           [32m[K~[m[K[01;31m[K^[m[K [34m[K~~~~~~~~~~~~~~~~~[m[K
+[3.564s]       |                           [32m[K|[m[K  [34m[K|[m[K
+[3.565s]       |                           [32m[K|[m[K  [34m[Krclcpp::Time[m[K
+[3.565s]       |                           [32m[Kint[m[K
+[3.565s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:24[m[K,
+[3.565s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:27[m[K,
+[3.565s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:30[m[K,
+[3.565s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.565s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.565s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.565s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.565s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.565s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.565s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.565s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.565s]                  from [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:1[m[K:
+[3.565s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:223:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Time rclcpp::operator+(const rclcpp::Duration&, const rclcpp::Time&)[m[K’
+[3.565s]   223 | [01;36m[Koperator[m[K+(const rclcpp::Duration & lhs, const rclcpp::Time & rhs);
+[3.565s]       | [01;36m[K^~~~~~~~[m[K
+[3.566s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:223:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst rclcpp::Duration&[m[K’
+[3.566s]   223 | operator+([01;36m[Kconst rclcpp::Duration & lhs[m[K, const rclcpp::Time & rhs);
+[3.566s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[6.872s] gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+[6.872s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gps_navigator.dir/all] Error 2
+[6.872s] gmake: *** [Makefile:146: all] Error 2
+[6.874s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8

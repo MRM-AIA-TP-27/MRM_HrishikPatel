@@ -1,0 +1,74 @@
+[0.019s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hrishik/robot_ws/src/my_robot_controller -DCMAKE_INSTALL_PREFIX=/home/hrishik/robot_ws/install/my_robot_controller
+[0.044s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.275s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.288s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.345s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.351s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.362s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.381s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.403s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.463s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.466s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.666s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.756s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.809s] -- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)
+[0.815s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.961s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.019s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.078s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.688s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.699s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.991s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.003s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.014s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.297s] -- Found Qhull version 8.0.2
+[2.588s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.898s] [33mCMake Warning (dev) at CMakeLists.txt:21 (find_package):
+[2.898s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[2.898s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[2.899s]   command to set the policy and suppress this warning.
+[2.899s] 
+[2.899s]   CMake variable PCL_ROOT is set to:
+[2.899s] 
+[2.899s]     /usr
+[2.899s] 
+[2.899s]   For compatibility, CMake is ignoring the variable.
+[2.899s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.900s] [0m
+[3.072s] -- Configuring done
+[3.165s] -- Generating done
+[3.194s] -- Build files have been written to: /home/hrishik/robot_ws/build/my_robot_controller
+[3.223s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/hrishik/robot_ws/src/my_robot_controller -DCMAKE_INSTALL_PREFIX=/home/hrishik/robot_ws/install/my_robot_controller
+[3.224s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[3.305s] [35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[3.321s] [ 25%] [32mBuilding CXX object CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o[0m
+[3.349s] [ 50%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[28.328s] [ 75%] [32m[1mLinking CXX executable obstacle_detector[0m
+[30.962s] [ 75%] Built target obstacle_detector
+[37.395s] [100%] [32m[1mLinking CXX executable gps_navigator[0m
+[41.558s] [100%] Built target gps_navigator
+[41.609s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[41.628s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hrishik/robot_ws/build/my_robot_controller
+[41.641s] -- Install configuration: ""
+[41.642s] -- Execute custom install script
+[41.643s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/lib/my_robot_controller/gps_navigator
+[41.643s] -- Symlinking: /home/hrishik/robot_ws/install/my_robot_controller/lib/my_robot_controller/obstacle_detector
+[41.659s] -- Symlinking: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/launch/navigation.launch.py
+[41.674s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/urdf/robot.gazebo.xacro
+[41.674s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/urdf/robot.urdf.xacro
+[41.675s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/ament_index/resource_index/package_run_dependencies/my_robot_controller
+[41.675s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/ament_index/resource_index/parent_prefix_path/my_robot_controller
+[41.675s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/environment/ament_prefix_path.sh
+[41.676s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/environment/ament_prefix_path.dsv
+[41.676s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/environment/path.sh
+[41.676s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/environment/path.dsv
+[41.676s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/local_setup.bash
+[41.676s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/local_setup.sh
+[41.676s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/local_setup.zsh
+[41.677s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/local_setup.dsv
+[41.677s] -- Symlinking: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/package.dsv
+[41.692s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/ament_index/resource_index/packages/my_robot_controller
+[41.692s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/cmake/my_robot_controllerConfig.cmake
+[41.692s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/cmake/my_robot_controllerConfig-version.cmake
+[41.693s] -- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/package.xml
+[41.696s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hrishik/robot_ws/build/my_robot_controller

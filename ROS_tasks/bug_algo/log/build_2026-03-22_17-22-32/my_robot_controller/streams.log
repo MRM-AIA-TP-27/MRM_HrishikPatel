@@ -1,0 +1,12 @@
+[0.009s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[0.054s] [ 25%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[0.055s] [ 75%] Built target obstacle_detector
+[0.231s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:7:10:[m[K [01;31m[Kfatal error: [m[Kpcl_conversions/pcl_conversions.h: No such file or directory
+[0.231s]     7 | #include [01;31m[K<pcl_conversions/pcl_conversions.h>[m[K
+[0.231s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.231s] compilation terminated.
+[0.284s] gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+[0.285s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gps_navigator.dir/all] Error 2
+[0.285s] gmake: *** [Makefile:146: all] Error 2
+[0.289s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8

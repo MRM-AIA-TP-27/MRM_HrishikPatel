@@ -1,0 +1,59 @@
+[35m[1mConsolidate compiler generated dependencies of target obstacle_detector[0m
+[35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:[m[K In member function ‘[01m[Kvoid ObstacleDetectionNode::processPointCloud()[m[K’:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:48:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_msg[m[K’ was not declared in this scope
+   48 |     pcl::fromROSMsg(*[01;31m[Kcloud_msg[m[K, *cloud);
+      |                      [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:107:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_pub_[m[K’ was not declared in this scope
+  107 |     [01;31m[Kcloud_pub_[m[K->publish(output);
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:113:44:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr clustered_cloud[m[K’
+  113 |     pcl::PointCloud<pcl::PointXYZRGB>::Ptr [01;31m[Kclustered_cloud[m[K(new pcl::PointCloud<pcl::PointXYZRGB>);
+      |                                            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:93:41:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kpcl::PointCloud<pcl::PointXYZ>::Ptr clustered_cloud[m[K’
+   93 |     pcl::PointCloud<pcl::PointXYZ>::Ptr [01;36m[Kclustered_cloud[m[K(new pcl::PointCloud<pcl::PointXYZ>);
+      |                                         [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:131:42:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::push_back(pcl::PointXYZRGB&)[m[K’
+  131 |         [01;31m[Kclustered_cloud->points.push_back(pt)[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+                 from [01m[K/usr/include/c++/11/functional:62[m[K,
+                 from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1187:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = pcl::PointXYZ; _Alloc = Eigen::aligned_allocator<pcl::PointXYZ>; std::vector<_Tp, _Alloc>::value_type = pcl::PointXYZ][m[K’
+ 1187 |       [01;36m[Kpush_back[m[K(const value_type& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1187:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kpcl::PointXYZRGB[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst pcl::PointXYZ&[m[K’}
+ 1187 |       push_back([01;36m[Kconst value_type& __x[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1203:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = pcl::PointXYZ; _Alloc = Eigen::aligned_allocator<pcl::PointXYZ>; std::vector<_Tp, _Alloc>::value_type = pcl::PointXYZ][m[K’
+ 1203 |       [01;36m[Kpush_back[m[K(value_type&& __x)
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1203:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kpcl::PointXYZRGB[m[K’ to ‘[01m[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::value_type&&[m[K’ {aka ‘[01m[Kpcl::PointXYZ&&[m[K’}
+ 1203 |       push_back([01;36m[Kvalue_type&& __x[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:143:35:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Ksensor_msgs::msg::PointCloud2 output[m[K’
+  143 |     sensor_msgs::msg::PointCloud2 [01;31m[Koutput[m[K;
+      |                                   [01;31m[K^~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:104:35:[m[K [01;36m[Knote: [m[K‘[01m[Ksensor_msgs::msg::PointCloud2 output[m[K’ previously declared here
+  104 |     sensor_msgs::msg::PointCloud2 [01;36m[Koutput[m[K;
+      |                                   [01;36m[K^~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:110:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  110 |     double [01;35m[Kmin_distance[m[K = std::numeric_limits<double>::max();
+      |            [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:111:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kobstacle_within_range[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  111 |     bool [01;35m[Kobstacle_within_range[m[K = false;
+      |          [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/obstacle_detector.dir/build.make:76: CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/obstacle_detector.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 75%] [32m[1mLinking CXX executable gps_navigator[0m
+[ 75%] Built target gps_navigator
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,157 @@
+[0.000000] (-) TimerEvent: {}
+[0.000595] (my_robot_controller) JobQueued: {'identifier': 'my_robot_controller', 'dependencies': OrderedDict()}
+[0.000619] (my_robot_controller) JobStarted: {'identifier': 'my_robot_controller'}
+[0.006492] (my_robot_controller) JobProgress: {'identifier': 'my_robot_controller', 'progress': 'cmake'}
+[0.007122] (my_robot_controller) JobProgress: {'identifier': 'my_robot_controller', 'progress': 'build'}
+[0.007679] (my_robot_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hrishik/robot_ws/build/my_robot_controller', '--', '-j8', '-l8'], 'cwd': '/home/hrishik/robot_ws/build/my_robot_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'hrishik'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hrishik/ros2_ws/install/ublox_gps/lib:/home/hrishik/ros2_ws/install/ublox_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hrishik'), ('OLDPWD', '/home/hrishik/robot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1663'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hrishik/robot_ws/install:/home/hrishik/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hrishik'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hrishik'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hrishik/anaconda3/bin:/opt/ros/humble/bin:/home/hrishik/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/hrishik-Inspiron-15-3511:@/tmp/.ICE-unix/1634,unix/hrishik-Inspiron-15-3511:/tmp/.ICE-unix/1634'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/db98589b_b7e1_41e0_8ebd_1bcc1a956438'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FEU7L3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hrishik/robot_ws/install/my_robot_controller:/home/hrishik/ros2_ws/install/group_robot:/home/hrishik/ros2_ws/install/ublox:/home/hrishik/ros2_ws/install/ublox_gps:/home/hrishik/ros2_ws/install/ublox_msgs:/home/hrishik/ros2_ws/install/ublox_serialization:/home/hrishik/ros2_ws/install/rtk_bridge:/home/hrishik/ros2_ws/install/robot:/home/hrishik/ros2_ws/install/gps_reader:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_IP', '127.0.0.1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hrishik/robot_ws/build/my_robot_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hrishik/ros2_ws/install/ublox_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hrishik/robot_ws/install/my_robot_controller:/home/hrishik/ros2_ws/install/group_robot:/home/hrishik/ros2_ws/install/ublox:/home/hrishik/ros2_ws/install/ublox_gps:/home/hrishik/ros2_ws/install/ublox_msgs:/home/hrishik/ros2_ws/install/ublox_serialization:/home/hrishik/ros2_ws/install/rtk_bridge:/home/hrishik/ros2_ws/install/robot:/home/hrishik/ros2_ws/install/gps_reader:/opt/ros/humble')]), 'shell': False}
+[0.043714] (my_robot_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target obstacle_detector\x1b[0m\n'}
+[0.043863] (my_robot_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gps_navigator\x1b[0m\n'}
+[0.060764] (my_robot_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o\x1b[0m\n'}
+[0.060898] (my_robot_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o\x1b[0m\n'}
+[0.099844] (-) TimerEvent: {}
+[0.200168] (-) TimerEvent: {}
+[0.300452] (-) TimerEvent: {}
+[0.400793] (-) TimerEvent: {}
+[0.501142] (-) TimerEvent: {}
+[0.601553] (-) TimerEvent: {}
+[0.702033] (-) TimerEvent: {}
+[0.802356] (-) TimerEvent: {}
+[0.902644] (-) TimerEvent: {}
+[1.002949] (-) TimerEvent: {}
+[1.103388] (-) TimerEvent: {}
+[1.203786] (-) TimerEvent: {}
+[1.304091] (-) TimerEvent: {}
+[1.404459] (-) TimerEvent: {}
+[1.504788] (-) TimerEvent: {}
+[1.605097] (-) TimerEvent: {}
+[1.705424] (-) TimerEvent: {}
+[1.805702] (-) TimerEvent: {}
+[1.905985] (-) TimerEvent: {}
+[2.006302] (-) TimerEvent: {}
+[2.106595] (-) TimerEvent: {}
+[2.206863] (-) TimerEvent: {}
+[2.307194] (-) TimerEvent: {}
+[2.407444] (-) TimerEvent: {}
+[2.507695] (-) TimerEvent: {}
+[2.607960] (-) TimerEvent: {}
+[2.708268] (-) TimerEvent: {}
+[2.808529] (-) TimerEvent: {}
+[2.908790] (-) TimerEvent: {}
+[3.009058] (-) TimerEvent: {}
+[3.109315] (-) TimerEvent: {}
+[3.209627] (-) TimerEvent: {}
+[3.309877] (-) TimerEvent: {}
+[3.410087] (-) TimerEvent: {}
+[3.510325] (-) TimerEvent: {}
+[3.610656] (-) TimerEvent: {}
+[3.711000] (-) TimerEvent: {}
+[3.811299] (-) TimerEvent: {}
+[3.911566] (-) TimerEvent: {}
+[3.990157] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ObstacleDetectionNode::processPointCloud()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.990318] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:48:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcloud_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.990365] (my_robot_controller) StderrLine: {'line': b'   48 |     pcl::fromROSMsg(*\x1b[01;31m\x1b[Kcloud_msg\x1b[m\x1b[K, *cloud);\n'}
+[3.990408] (my_robot_controller) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.011683] (-) TimerEvent: {}
+[4.024667] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:107:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcloud_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.024841] (my_robot_controller) StderrLine: {'line': b'  107 |     \x1b[01;31m\x1b[Kcloud_pub_\x1b[m\x1b[K->publish(output);\n'}
+[4.024889] (my_robot_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.028610] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:113:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconflicting declaration \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr clustered_cloud\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.028742] (my_robot_controller) StderrLine: {'line': b'  113 |     pcl::PointCloud<pcl::PointXYZRGB>::Ptr \x1b[01;31m\x1b[Kclustered_cloud\x1b[m\x1b[K(new pcl::PointCloud<pcl::PointXYZRGB>);\n'}
+[4.028785] (my_robot_controller) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.028822] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:93:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration as \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZ>::Ptr clustered_cloud\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.028860] (my_robot_controller) StderrLine: {'line': b'   93 |     pcl::PointCloud<pcl::PointXYZ>::Ptr \x1b[01;36m\x1b[Kclustered_cloud\x1b[m\x1b[K(new pcl::PointCloud<pcl::PointXYZ>);\n'}
+[4.028895] (my_robot_controller) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.029919] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:131:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::push_back(pcl::PointXYZRGB&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.030056] (my_robot_controller) StderrLine: {'line': b'  131 |         \x1b[01;31m\x1b[Kclustered_cloud->points.push_back(pt)\x1b[m\x1b[K;\n'}
+[4.030098] (my_robot_controller) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[4.030135] (my_robot_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:67\x1b[m\x1b[K,\n'}
+[4.030176] (my_robot_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[4.030211] (my_robot_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[4.030263] (my_robot_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[4.030310] (my_robot_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[4.030358] (my_robot_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.030404] (my_robot_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.030451] (my_robot_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.030497] (my_robot_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:1\x1b[m\x1b[K:\n'}
+[4.030575] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1187:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = pcl::PointXYZ; _Alloc = Eigen::aligned_allocator<pcl::PointXYZ>; std::vector<_Tp, _Alloc>::value_type = pcl::PointXYZ]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.030625] (my_robot_controller) StderrLine: {'line': b' 1187 |       \x1b[01;36m\x1b[Kpush_back\x1b[m\x1b[K(const value_type& __x)\n'}
+[4.030671] (my_robot_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.030718] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1187:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointXYZRGB\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst value_type&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst pcl::PointXYZ&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[4.030798] (my_robot_controller) StderrLine: {'line': b' 1187 |       push_back(\x1b[01;36m\x1b[Kconst value_type& __x\x1b[m\x1b[K)\n'}
+[4.030837] (my_robot_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[4.030872] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1203:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = pcl::PointXYZ; _Alloc = Eigen::aligned_allocator<pcl::PointXYZ>; std::vector<_Tp, _Alloc>::value_type = pcl::PointXYZ]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.030912] (my_robot_controller) StderrLine: {'line': b' 1203 |       \x1b[01;36m\x1b[Kpush_back\x1b[m\x1b[K(value_type&& __x)\n'}
+[4.030947] (my_robot_controller) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.030981] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1203:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointXYZRGB\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<pcl::PointXYZ, Eigen::aligned_allocator<pcl::PointXYZ> >::value_type&&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointXYZ&&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[4.031023] (my_robot_controller) StderrLine: {'line': b' 1203 |       push_back(\x1b[01;36m\x1b[Kvalue_type&& __x\x1b[m\x1b[K)\n'}
+[4.031060] (my_robot_controller) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[4.031094] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:143:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::PointCloud2 output\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.031129] (my_robot_controller) StderrLine: {'line': b'  143 |     sensor_msgs::msg::PointCloud2 \x1b[01;31m\x1b[Koutput\x1b[m\x1b[K;\n'}
+[4.031163] (my_robot_controller) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.031197] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:104:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::PointCloud2 output\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[4.031231] (my_robot_controller) StderrLine: {'line': b'  104 |     sensor_msgs::msg::PointCloud2 \x1b[01;36m\x1b[Koutput\x1b[m\x1b[K;\n'}
+[4.031264] (my_robot_controller) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.031300] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:110:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kmin_distance\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.031336] (my_robot_controller) StderrLine: {'line': b'  110 |     double \x1b[01;35m\x1b[Kmin_distance\x1b[m\x1b[K = std::numeric_limits<double>::max();\n'}
+[4.031369] (my_robot_controller) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.031402] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:111:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kobstacle_within_range\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.031438] (my_robot_controller) StderrLine: {'line': b'  111 |     bool \x1b[01;35m\x1b[Kobstacle_within_range\x1b[m\x1b[K = false;\n'}
+[4.031472] (my_robot_controller) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.111797] (-) TimerEvent: {}
+[4.119534] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid AutonomousNavigation::cloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.119672] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:83:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPassThrough\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kpcl\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.119714] (my_robot_controller) StderrLine: {'line': b'   83 |         pcl::\x1b[01;31m\x1b[KPassThrough\x1b[m\x1b[K<pcl::PointXYZ> pass;\n'}
+[4.119751] (my_robot_controller) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.119787] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:83:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.119822] (my_robot_controller) StderrLine: {'line': b'   83 |         pcl::PassThrough<pcl::PointXYZ\x1b[01;31m\x1b[K>\x1b[m\x1b[K pass;\n'}
+[4.119856] (my_robot_controller) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.125198] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:83:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpass\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.125368] (my_robot_controller) StderrLine: {'line': b'   83 |         pcl::PassThrough<pcl::PointXYZ> \x1b[01;31m\x1b[Kpass\x1b[m\x1b[K;\n'}
+[4.125415] (my_robot_controller) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.211922] (-) TimerEvent: {}
+[4.312183] (-) TimerEvent: {}
+[4.412436] (-) TimerEvent: {}
+[4.512698] (-) TimerEvent: {}
+[4.613069] (-) TimerEvent: {}
+[4.713363] (-) TimerEvent: {}
+[4.839877] (-) TimerEvent: {}
+[4.940181] (-) TimerEvent: {}
+[5.040537] (-) TimerEvent: {}
+[5.140808] (-) TimerEvent: {}
+[5.241122] (-) TimerEvent: {}
+[5.341392] (-) TimerEvent: {}
+[5.441640] (-) TimerEvent: {}
+[5.541907] (-) TimerEvent: {}
+[5.642184] (-) TimerEvent: {}
+[5.742468] (-) TimerEvent: {}
+[5.842725] (-) TimerEvent: {}
+[5.942983] (-) TimerEvent: {}
+[6.043233] (-) TimerEvent: {}
+[6.143511] (-) TimerEvent: {}
+[6.243774] (-) TimerEvent: {}
+[6.344041] (-) TimerEvent: {}
+[6.411181] (my_robot_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/obstacle_detector.dir/build.make:76: CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o] Error 1\n'}
+[6.411366] (my_robot_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/obstacle_detector.dir/all] Error 2\n'}
+[6.411416] (my_robot_controller) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[6.444128] (-) TimerEvent: {}
+[6.544450] (-) TimerEvent: {}
+[6.644785] (-) TimerEvent: {}
+[6.745064] (-) TimerEvent: {}
+[6.845307] (-) TimerEvent: {}
+[6.945577] (-) TimerEvent: {}
+[7.045852] (-) TimerEvent: {}
+[7.146099] (-) TimerEvent: {}
+[7.246326] (-) TimerEvent: {}
+[7.346580] (-) TimerEvent: {}
+[7.446834] (-) TimerEvent: {}
+[7.547084] (-) TimerEvent: {}
+[7.647393] (-) TimerEvent: {}
+[7.747668] (-) TimerEvent: {}
+[7.848010] (-) TimerEvent: {}
+[7.948259] (-) TimerEvent: {}
+[7.976706] (my_robot_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1\n'}
+[7.976881] (my_robot_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gps_navigator.dir/all] Error 2\n'}
+[7.976969] (my_robot_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.979169] (my_robot_controller) CommandEnded: {'returncode': 2}
+[7.986741] (my_robot_controller) JobEnded: {'identifier': 'my_robot_controller', 'rc': 2}
+[7.997169] (-) EventReactorShutdown: {}

@@ -1,0 +1,317 @@
+#include <cmath>
+#include <memory>
+#include <chrono>
+#include <algorithm>
+#include <limits>
+
+#include "rclcpp/rclcpp.hpp"
+#include "sensor_msgs/msg/nav_sat_fix.hpp"
+#include "sensor_msgs/msg/imu.hpp"
+#include "geometry_msgs/msg/twist.hpp"
+#include "geometry_msgs/msg/point.hpp"
+#include "sensor_msgs/msg/point_cloud2.hpp"
+
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2/LinearMath/Matrix3x3.h"
+
+#include <pcl_conversions/pcl_conversions.h>
+#include <pcl/point_cloud.h>
+#include <pcl/point_types.h>
+#include <pcl/segmentation/sac_segmentation.h>
+#include <pcl/filters/extract_indices.h>
+#include <pcl/filters/passthrough.h>
+#include <pcl/filters/voxel_grid.h>
+#include <pcl/search/kdtree.h>
+#include <pcl/segmentation/extract_clusters.h>
+
+#define PI 3.141592653589793
+#define EARTH_RADIUS 6371000.0
+
+class GPSNavigator : public rclcpp::Node
+{
+public:
+    GPSNavigator() : Node("gps_navigator")
+    {
+        gps_sub_ = create_subscription<sensor_msgs::msg::NavSatFix>(
+            "/gps/fix", 10, std::bind(&GPSNavigator::gpsCallback, this, std::placeholders::_1));
+
+        imu_sub_ = create_subscription<sensor_msgs::msg::Imu>(
+            "/imu", 10, std::bind(&GPSNavigator::imuCallback, this, std::placeholders::_1));
+
+        pcl_sub_ = create_subscription<sensor_msgs::msg::PointCloud2>(
+            "obstacles", 10, std::bind(&GPSNavigator::cloudCallback, this, std::placeholders::_1));
+
+        goal_sub_ = create_subscription<geometry_msgs::msg::Point>(
+            "/set_gps_goal", 10,
+            [this](geometry_msgs::msg::Point::SharedPtr msg) {
+                tar_lat_ = msg->x;
+                tar_lon_ = msg->y;
+                mission_active_ = true;
+                phase_ = NavPhase::ROTATE_START;
+                reversing_critical_ = false;
+                very_close_ = false;
+                RCLCPP_INFO(get_logger(), "[GOAL] New GPS goal set");
+            });
+
+        cmd_vel_pub_ = create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
+        obs_cloud_pub_ = create_publisher<sensor_msgs::msg::PointCloud2>("/points_no_ground", 10);
+        RCLCPP_INFO(get_logger(), "[INIT] Publishing ground-removed cloud on /points_no_ground");
+
+        last_obstacle_time_ = now();
+        reverse_start_time_ = now();
+
+        timer_ = create_wall_timer(
+            std::chrono::milliseconds(50),
+            std::bind(&GPSNavigator::controlLoop, this));
+
+        RCLCPP_INFO(get_logger(), "GPS Navigator started with 2s avoidance recovery");
+    }
+
+private:
+    enum class NavPhase { ROTATE_START, MOVE, ROTATE_NEAR, DONE };
+
+    // CALLBACKS 
+
+    void gpsCallback(sensor_msgs::msg::NavSatFix::SharedPtr msg)
+    {
+        cur_lat_ = msg->latitude;
+        cur_lon_ = msg->longitude;
+        gps_ready_ = true;
+    }
+
+    void imuCallback(sensor_msgs::msg::Imu::SharedPtr msg)
+    {
+        tf2::Quaternion q(
+            msg->orientation.x,
+            msg->orientation.y,
+            msg->orientation.z,
+            msg->orientation.w);
+        tf2::Matrix3x3(q).getRPY(dummy_, dummy_, cur_yaw_);
+        imu_ready_ = true;
+    }
+
+    void cloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg)
+    {
+        pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
+        pcl::fromROSMsg(*msg, *cloud);
+
+        // EMPTY AETLE NO OBSTACLE
+        if (cloud->empty())
+        {
+            obstacle_detected_ = false;
+            last_obstacle_dist_ = 999.0;
+            avoidance_steering_ = 0.0;
+
+            RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 500,
+                "[OBS] No obstacles");
+
+            return;
+        }
+
+        // FIND CLOSEST + SIDE
+        double min_dist = std::numeric_limits<double>::max();
+        double sum_y = 0.0;
+        int count = 0;
+
+        for (const auto& pt : cloud->points)
+        {
+            double dist = std::sqrt(pt.x * pt.x + pt.y * pt.y);
+
+            if (dist < min_dist)
+                min_dist = dist;
+
+            if (dist < 2.0)  // consider nearby obstacles only
+            {
+                sum_y += pt.y;
+                count++;
+            }
+        }
+
+        last_obstacle_dist_ = min_dist;
+
+        // DETECTION
+        obstacle_detected_ = (min_dist < 1.5);
+
+        // LEFT / RIGHT DECISION
+        if (count > 0)
+        {
+            double avg_y = sum_y / count;
+
+            if (avg_y > 0)
+                avoidance_steering_ = -0.5;
+            else
+                avoidance_steering_ = 0.5;
+        }
+
+        RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 500,
+            "[OBS] dist=%.2f detected=%d steer=%.2f",
+            min_dist, obstacle_detected_, avoidance_steering_);
+    }
+
+    // CONTROL LOOP
+
+    
+    void controlLoop()
+    {
+        if (!mission_active_ || !gps_ready_ || !imu_ready_) return;
+
+        geometry_msgs::msg::Twist cmd;
+
+        // Convert GPS to local XY
+        double dLat = (tar_lat_ - cur_lat_) * PI / 180.0;
+        double dLon = (tar_lon_ - cur_lon_) * PI / 180.0;
+
+        double x = -EARTH_RADIUS * dLon * cos(cur_lat_ * PI / 180.0);
+        double y = -EARTH_RADIUS * dLat;
+
+        double dist = std::sqrt(x*x + y*y);
+
+        // Goal check
+        if (dist < 0.5)
+        {
+            RCLCPP_INFO(get_logger(), "[STATE] GOAL REACHED");
+            mission_active_ = false;
+            cmd_vel_pub_->publish(cmd);
+            return;
+        }
+
+        // ===== Heading =====
+        double target_yaw = std::atan2(y, x);
+        double yaw_err = normalize(target_yaw - cur_yaw_);
+
+        // ===== Tangent Bug States =====
+        static bool following_boundary = false;
+        static double best_dist = std::numeric_limits<double>::max();
+        static double hit_dist = std::numeric_limits<double>::max();
+        static rclcpp::Time leave_start_time;
+        static bool leave_timer_started = false;
+
+        // PRIORITY 1: FOLLOW BOUNDARY (SAUTHI IMPORTANT NAITO REACTIVE THAI JASE)
+        if (following_boundary)
+        {
+            RCLCPP_INFO(get_logger(),
+            "dist=%.2f hit_dist=%.2f obs=%d",
+            dist, hit_dist, obstacle_detected_);
+            // update best distance
+            if (dist < best_dist)
+                best_dist = dist;
+
+            // LEAVE condition (STRICT)
+            if (obstacle_detected_)
+            {
+                following_boundary = true;
+                hit_dist = dist;
+            }
+            if (!obstacle_detected_ && dist < hit_dist - 0.2)
+            {
+                if (!leave_timer_started)
+                {
+                    leave_start_time = now();
+                    leave_timer_started = true;
+                    RCLCPP_INFO(get_logger(), "[TB] Leave timer started");
+                }
+
+                double dt = (now() - leave_start_time).seconds();
+                
+
+                if (dt > 3.0)   // 3 SECOND DELAY
+                {
+                    following_boundary = false;
+                    leave_timer_started = false;
+
+                    RCLCPP_INFO(get_logger(), "[TB] LEAVE → GOAL after delay");
+                }
+            }
+            else
+            {
+                if (last_obstacle_dist_ < 1.2)
+                {
+                    // rotate in place if too close
+                    cmd.linear.x = 0.0;
+                    cmd.angular.z = -0.4;
+                }
+                else
+                {
+                    cmd.linear.x = 0.2;
+                    cmd.angular.z = -0.2;
+                }
+
+                RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 500,
+                    "[TB] FOLLOWING boundary");
+
+                cmd_vel_pub_->publish(cmd);
+                return;   // EXIT
+            }
+        }
+
+        // CHECK FOR NEW OBSTACLE (ENTER FOLLOW MODE)
+        if (obstacle_detected_)
+        {
+            following_boundary = true;
+            best_dist = dist;
+
+            RCLCPP_WARN(get_logger(), "[TB] HIT → FOLLOW");
+            return;  // wait till next loop to act
+        }
+
+        // PRIORITY 2: ALIGN TO GOAL
+        if (fabs(yaw_err) > 0.4)
+        {
+            cmd.linear.x = 0.0;
+            cmd.angular.z = std::clamp(1.0 * yaw_err, -0.6, 0.6);
+
+            RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 500,
+                "[ALIGN] yaw_err=%.2f", yaw_err);
+
+            cmd_vel_pub_->publish(cmd);
+            return;
+        }
+
+        // PRIORITY 3: MOVE TO GOAL
+        cmd.linear.x = 0.4;
+        cmd.angular.z = std::clamp(0.5 * yaw_err, -0.3, 0.3);
+
+        RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 500,
+            "[GOAL] moving | dist=%.2f yaw_err=%.2f", dist, yaw_err);
+
+        // Publish VEL
+        cmd_vel_pub_->publish(cmd);
+    }
+    double normalize(double a)
+    {
+        while (a > PI) a -= 2*PI;
+        while (a < -PI) a += 2*PI;
+        return a;
+    }
+
+    // MEMBERS
+
+    rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr gps_sub_;
+    rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
+    rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr pcl_sub_;
+    rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr goal_sub_;
+    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub_;
+    rclcpp::TimerBase::SharedPtr timer_;
+    rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr obs_cloud_pub_;
+
+    double cur_lat_{0}, cur_lon_{0}, cur_yaw_{0};
+    double tar_lat_{0}, tar_lon_{0};
+
+    bool gps_ready_{false}, imu_ready_{false}, mission_active_{false};
+    bool obstacle_detected_{false}, very_close_{false}, reversing_critical_{false};
+
+    double avoidance_steering_{0}, last_obstacle_dist_{999.0};
+
+    rclcpp::Time last_obstacle_time_, reverse_start_time_;
+    NavPhase phase_{NavPhase::DONE};
+
+    double dummy_{0};
+};
+
+int main(int argc, char **argv)
+{
+    rclcpp::init(argc, argv);
+    rclcpp::spin(std::make_shared<GPSNavigator>());
+    rclcpp::shutdown();
+    return 0;
+}

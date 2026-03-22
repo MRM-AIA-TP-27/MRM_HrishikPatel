@@ -1,0 +1,1 @@
+rclcpp;sensor_msgs;geometry_msgs;tf2;tf2_geometry_msgs;pcl_ros;pcl_conversions;libpcl-all-dev;xacro;nav2_msgs;nav2_bringup;nav2_lifecycle_manager;nav2_bt_navigator

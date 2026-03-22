@@ -1,0 +1,12 @@
+[0.077s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[0.131s] [35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[0.143s] [ 50%] Built target obstacle_detector
+[0.189s] [ 75%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[4.151s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In constructor ‘[01m[KGPSNavigator::GPSNavigator()[m[K’:
+[4.151s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:42:66:[m[K [01;31m[Kerror: [m[K‘[01m[KpointCloudCallback[m[K’ is not a member of ‘[01m[KGPSNavigator[m[K’
+[4.151s]    42 |             "/depth/colour/points", 10, std::bind(&GPSNavigator::[01;31m[KpointCloudCallback[m[K, this, std::placeholders::_1));
+[4.151s]       |                                                                  [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[8.075s] gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+[8.076s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gps_navigator.dir/all] Error 2
+[8.076s] gmake: *** [Makefile:146: all] Error 2
+[8.077s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8

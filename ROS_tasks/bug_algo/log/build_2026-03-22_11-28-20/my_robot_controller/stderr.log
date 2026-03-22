@@ -1,0 +1,7 @@
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:[m[K In member function ‘[01m[Kvoid ObstacleDetectionNode::processPointCloud()[m[K’:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:52:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_filtered[m[K’ was not declared in this scope
+   52 |     pass.filter(*[01;31m[Kcloud_filtered[m[K);
+      |                  [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/obstacle_detector.dir/build.make:76: CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/obstacle_detector.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

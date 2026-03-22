@@ -1,0 +1,12 @@
+[0.008s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target obstacle_detector[0m
+[0.056s] [ 50%] Built target gps_navigator
+[0.061s] [ 75%] [32mBuilding CXX object CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o[0m
+[4.665s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:[m[K In member function ‘[01m[Kvoid ObstacleDetectionNode::processPointCloud()[m[K’:
+[4.665s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:52:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_filtered[m[K’ was not declared in this scope
+[4.665s]    52 |     pass.filter(*[01;31m[Kcloud_filtered[m[K);
+[4.665s]       |                  [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.268s] gmake[2]: *** [CMakeFiles/obstacle_detector.dir/build.make:76: CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o] Error 1
+[7.268s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/obstacle_detector.dir/all] Error 2
+[7.269s] gmake: *** [Makefile:146: all] Error 2
+[7.270s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8

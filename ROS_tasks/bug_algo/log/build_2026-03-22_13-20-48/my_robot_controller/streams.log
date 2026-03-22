@@ -1,0 +1,31 @@
+[0.009s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[0.061s] [ 50%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[3.482s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:81:12:[m[K [01;31m[Kerror: [m[Kmultiple definition of ‘[01m[Kenum class TangentBugLite::DriveMode[m[K’
+[3.482s]    81 | enum class [01;31m[KDriveMode[m[K { NAVIGATING, WAITING, CLEARING, AVOIDING };
+[3.482s]       |            [01;31m[K^~~~~~~~~[m[K
+[3.482s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:36:16:[m[K [01;36m[Knote: [m[Kprevious definition here
+[3.482s]    36 |     enum class [01;36m[KDriveMode[m[K { NAVIGATING, WAITING, CLEARING, AVOIDING };
+[3.482s]       |                [01;36m[K^~~~~~~~~[m[K
+[3.482s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:82:30:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KTangentBugLite::DriveMode TangentBugLite::mode_[m[K’
+[3.482s]    82 | DriveMode mode_ = DriveMode::[01;31m[KNAVIGATING[m[K;
+[3.482s]       |                              [01;31m[K^~~~~~~~~~[m[K
+[3.482s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:37:15:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[KTangentBugLite::DriveMode TangentBugLite::mode_[m[K’
+[3.482s]    37 |     DriveMode [01;36m[Kmode_[m[K = DriveMode::NAVIGATING;
+[3.482s]       |               [01;36m[K^~~~~[m[K
+[3.482s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:83:14:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Krclcpp::Time TangentBugLite::state_start_time_[m[K’
+[3.482s]    83 | rclcpp::Time [01;31m[Kstate_start_time_[m[K;
+[3.482s]       |              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[3.482s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:38:18:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Krclcpp::Time TangentBugLite::state_start_time_[m[K’
+[3.482s]    38 |     rclcpp::Time [01;36m[Kstate_start_time_[m[K;
+[3.482s]       |                  [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.482s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:84:22:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kbool TangentBugLite::state_locked_[m[K’
+[3.482s]    84 | bool state_locked_ = [01;31m[Kfalse[m[K; // Prevents GPS from overriding the sequence
+[3.482s]       |                      [01;31m[K^~~~~[m[K
+[3.482s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:39:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kbool TangentBugLite::state_locked_[m[K’
+[3.482s]    39 |     bool [01;36m[Kstate_locked_[m[K = false;
+[3.482s]       |          [01;36m[K^~~~~~~~~~~~~[m[K
+[6.892s] gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+[6.893s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gps_navigator.dir/all] Error 2
+[6.893s] gmake: *** [Makefile:146: all] Error 2
+[6.894s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8

@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[ 25%] [32m[1mLinking CXX executable gps_navigator[0m
+[ 75%] Built target obstacle_detector

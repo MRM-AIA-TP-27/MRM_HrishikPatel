@@ -1,0 +1,9 @@
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:28:66:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Krclcpp::Subscription<sensor_msgs::msg::NavSatFix_<std::allocator<void> > >::SharedPtr AutonomousNavigation::location_sub_[m[K’
+   28 |     rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr [01;31m[Klocation_sub_[m[K;
+      |                                                                  [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:23:66:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Krclcpp::Subscription<sensor_msgs::msg::NavSatFix_<std::allocator<void> > >::SharedPtr AutonomousNavigation::location_sub_[m[K’
+   23 |     rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr [01;36m[Klocation_sub_[m[K;
+      |                                                                  [01;36m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gps_navigator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

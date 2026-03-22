@@ -1,0 +1,15 @@
+[0.009s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[0.060s] [ 50%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[3.583s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In member function ‘[01m[Kvoid TangentBugLite::gps_cb(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.583s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:84:20:[m[K [01;31m[Kerror: [m[Kuse of ‘[01m[Know[m[K’ before deduction of ‘[01m[Kauto[m[K’
+[3.583s]    84 |         auto now = [01;31m[Know[m[K(); // Use the node clock
+[3.583s]       |                    [01;31m[K^~~[m[K
+[3.590s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:86:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_start_time[m[K’ was not declared in this scope; did you mean ‘[01m[Kstate_start_time_[m[K’?
+[3.590s]    86 |         auto deadline = [01;31m[Kstate_start_time[m[K + wait_duration;
+[3.590s]       |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.590s]       |                         [32m[Kstate_start_time_[m[K
+[6.918s] gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+[6.918s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gps_navigator.dir/all] Error 2
+[6.919s] gmake: *** [Makefile:146: all] Error 2
+[6.920s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8

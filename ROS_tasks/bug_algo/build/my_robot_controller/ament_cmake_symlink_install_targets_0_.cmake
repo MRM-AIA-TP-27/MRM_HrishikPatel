@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/hrishik/robot_ws/build/my_robot_controller/gps_navigator" "/home/hrishik/robot_ws/build/my_robot_controller/obstacle_detector" "TARGETS" "gps_navigator" "obstacle_detector" "DESTINATION" "lib/my_robot_controller")

@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[ 50%] Built target obstacle_detector
+[ 75%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In member function ‘[01m[Kvoid GPSNavigator::controlLoop()[m[K’:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:196:47:[m[K [01;31m[Kerror: [m[K‘[01m[Khit_dist[m[K’ was not declared in this scope; did you mean ‘[01m[Kbest_dist[m[K’?
+  196 |             if (!obstacle_detected_ && dist < [01;31m[Khit_dist[m[K - 0.2)
+      |                                               [01;31m[K^~~~~~~~[m[K
+      |                                               [32m[Kbest_dist[m[K
+gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gps_navigator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

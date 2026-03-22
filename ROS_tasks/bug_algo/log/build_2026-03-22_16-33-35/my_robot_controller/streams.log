@@ -1,0 +1,86 @@
+[0.008s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[0.054s] [ 50%] Built target obstacle_detector
+[0.060s] [ 75%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[3.430s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:143:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[3.430s]   143 |     }
+[3.431s]       |      [01;31m[K^[m[K
+[3.431s]       |      [32m[K;[m[K
+[3.437s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In constructor ‘[01m[KTangentBugLite::TangentBugLite()[m[K’:
+[3.437s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:14:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgps_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kgps_cb[m[K’?
+[3.437s]    14 |         [01;31m[Kgps_sub_[m[K = this->create_subscription<sensor_msgs::msg::NavSatFix>(
+[3.437s]       |         [01;31m[K^~~~~~~~[m[K
+[3.437s]       |         [32m[Kgps_cb[m[K
+[3.476s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:16:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kimu_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kimu_cb[m[K’?
+[3.476s]    16 |         [01;31m[Kimu_sub_[m[K = this->create_subscription<sensor_msgs::msg::Imu>(
+[3.476s]       |         [01;31m[K^~~~~~~~[m[K
+[3.476s]       |         [32m[Kimu_cb[m[K
+[3.513s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kobstacle_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kobstacle_cb[m[K’?
+[3.513s]    20 |         [01;31m[Kobstacle_sub_[m[K = this->create_subscription<sensor_msgs::msg::PointCloud2>(
+[3.513s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[3.513s]       |         [32m[Kobstacle_cb[m[K
+[3.552s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:23:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_sub_[m[K’ was not declared in this scope
+[3.552s]    23 |         [01;31m[Kgoal_sub_[m[K = this->create_subscription<sensor_msgs::msg::NavSatFix>(
+[3.552s]       |         [01;31m[K^~~~~~~~~[m[K
+[3.589s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:30:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_pub_[m[K’ was not declared in this scope
+[3.590s]    30 |         [01;31m[Kcmd_pub_[m[K = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
+[3.590s]       |         [01;31m[K^~~~~~~~[m[K
+[3.590s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In member function ‘[01m[Kvoid TangentBugLite::obstacle_cb(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.590s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:60:13:[m[K [01;31m[Kerror: [m[K‘[01m[Khas_obstacle_[m[K’ was not declared in this scope
+[3.590s]    60 |             [01;31m[Khas_obstacle_[m[K = false;
+[3.590s]       |             [01;31m[K^~~~~~~~~~~~~[m[K
+[3.594s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:80:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft_tangent_[m[K’ was not declared in this scope
+[3.594s]    80 |         [01;31m[Kleft_tangent_[m[K = max_angle;
+[3.594s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[3.606s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:81:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kright_tangent_[m[K’ was not declared in this scope
+[3.606s]    81 |         [01;31m[Kright_tangent_[m[K = min_angle;
+[3.606s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.616s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:82:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclosest_dist_[m[K’ was not declared in this scope
+[3.616s]    82 |         [01;31m[Kclosest_dist_[m[K = min_dist;
+[3.617s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[3.627s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:83:9:[m[K [01;31m[Kerror: [m[K‘[01m[Khas_obstacle_[m[K’ was not declared in this scope
+[3.627s]    83 |         [01;31m[Khas_obstacle_[m[K = (min_dist < 3.0); // Trigger avoidance within 2 meters
+[3.627s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[3.635s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In member function ‘[01m[Kvoid TangentBugLite::gps_cb(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.635s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:93:27:[m[K [01;31m[Kerror: [m[K‘[01m[Khaversine[m[K’ was not declared in this scope
+[3.635s]    93 |     double dist_to_goal = [01;31m[Khaversine[m[K(cur_lat_, cur_lon_, target_lat_, target_lon_);
+[3.636s]       |                           [01;31m[K^~~~~~~~~[m[K
+[3.649s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:94:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kcalculate_bearing[m[K’ was not declared in this scope
+[3.650s]    94 |     double goal_heading = [01;31m[Kcalculate_bearing[m[K(cur_lat_, cur_lon_, target_lat_, target_lon_);
+[3.650s]       |                           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[3.662s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:95:28:[m[K [01;31m[Kerror: [m[K‘[01m[Knormalize_angle[m[K’ was not declared in this scope
+[3.662s]    95 |     double heading_error = [01;31m[Knormalize_angle[m[K(goal_heading - cur_yaw_);
+[3.663s]       |                            [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.673s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:98:9:[m[K [01;31m[Kerror: [m[K‘[01m[Khas_obstacle_[m[K’ was not declared in this scope
+[3.673s]    98 |     if ([01;31m[Khas_obstacle_[m[K) {
+[3.673s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[3.686s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:122:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft_tangent_[m[K’ was not declared in this scope
+[3.686s]   122 |         double steer = avoiding_left_ ? ([01;31m[Kleft_tangent_[m[K + 0.5) : (right_tangent_ - 0.5);
+[3.686s]       |                                          [01;31m[K^~~~~~~~~~~~~[m[K
+[3.698s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:122:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kright_tangent_[m[K’ was not declared in this scope
+[3.698s]   122 |         double steer = avoiding_left_ ? (left_tangent_ + 0.5) : ([01;31m[Kright_tangent_[m[K - 0.5);
+[3.698s]       |                                                                  [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.708s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:123:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_vel[m[K’ was not declared in this scope
+[3.708s]   123 |         [01;31m[Kpublish_vel[m[K(0.2, std::clamp(steer * 1.5, -1.2, 1.2));
+[3.708s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[3.718s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:128:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_vel[m[K’ was not declared in this scope
+[3.718s]   128 |         [01;31m[Kpublish_vel[m[K(0.2, blind_steer);
+[3.718s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[3.728s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:133:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_vel[m[K’ was not declared in this scope
+[3.728s]   133 |             [01;31m[Kpublish_vel[m[K(0.0, 0.0);
+[3.728s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[3.738s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:137:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_vel[m[K’ was not declared in this scope
+[3.738s]   137 |             [01;31m[Kpublish_vel[m[K(0.5, std::clamp(heading_error * 1.5, -1.0, 1.0));
+[3.738s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[3.745s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In function ‘[01m[Kvoid publish_vel(double, double)[m[K’:
+[3.745s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:149:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_pub_[m[K’ was not declared in this scope
+[3.745s]   149 |         [01;31m[Kcmd_pub_[m[K->publish(t);
+[3.745s]       |         [01;31m[K^~~~~~~~[m[K
+[3.748s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K At global scope:
+[3.748s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:178:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[3.748s]   178 | [01;31m[K}[m[K;
+[3.748s]       | [01;31m[K^[m[K
+[6.693s] gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+[6.694s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gps_navigator.dir/all] Error 2
+[6.694s] gmake: *** [Makefile:146: all] Error 2
+[6.696s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8

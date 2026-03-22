@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In member function ‘[01m[Kvoid TangentBugLite::gps_cb(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:84:20:[m[K [01;31m[Kerror: [m[Kuse of ‘[01m[Know[m[K’ before deduction of ‘[01m[Kauto[m[K’
+   84 |         auto now = [01;31m[Know[m[K(); // Use the node clock
+      |                    [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:86:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate_start_time[m[K’ was not declared in this scope; did you mean ‘[01m[Kstate_start_time_[m[K’?
+   86 |         auto deadline = [01;31m[Kstate_start_time[m[K + wait_duration;
+      |                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                         [32m[Kstate_start_time_[m[K
+gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gps_navigator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

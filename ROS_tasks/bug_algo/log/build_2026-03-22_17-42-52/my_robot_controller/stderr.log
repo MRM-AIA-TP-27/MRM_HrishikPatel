@@ -1,0 +1,52 @@
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In constructor ‘[01m[KGPSNavigator::GPSNavigator()[m[K’:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:38:66:[m[K [01;31m[Kerror: [m[K‘[01m[KpointCloudCallback[m[K’ is not a member of ‘[01m[KGPSNavigator[m[K’
+   38 |             "/depth/colour/points", 10, std::bind(&GPSNavigator::[01;31m[KpointCloudCallback[m[K, this, std::placeholders::_1));
+      |                                                                  [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In member function ‘[01m[Kvoid GPSNavigator::cloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:93:14:[m[K [01;31m[Kerror: [m[K‘[01m[KPassThrough[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+   93 |         pcl::[01;31m[KPassThrough[m[K<pcl::PointXYZ> pass;
+      |              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:93:39:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   93 |         pcl::PassThrough<pcl::PointXYZ[01;31m[K>[m[K pass;
+      |                                       [01;31m[K^[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:93:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kpass[m[K’ was not declared in this scope
+   93 |         pcl::PassThrough<pcl::PointXYZ> [01;31m[Kpass[m[K;
+      |                                         [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:103:14:[m[K [01;31m[Kerror: [m[K‘[01m[KVoxelGrid[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+  103 |         pcl::[01;31m[KVoxelGrid[m[K<pcl::PointXYZ> voxel;
+      |              [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:103:37:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  103 |         pcl::VoxelGrid<pcl::PointXYZ[01;31m[K>[m[K voxel;
+      |                                     [01;31m[K^[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:103:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoxel[m[K’ was not declared in this scope
+  103 |         pcl::VoxelGrid<pcl::PointXYZ> [01;31m[Kvoxel[m[K;
+      |                                       [01;31m[K^~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:126:22:[m[K [01;31m[Kerror: [m[K‘[01m[KKdTree[m[K’ is not a member of ‘[01m[Kpcl::search[m[K’
+  126 |         pcl::search::[01;31m[KKdTree[m[K<pcl::PointXYZ>::Ptr tree(new pcl::search::KdTree<pcl::PointXYZ>);
+      |                      [01;31m[K^~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:126:42:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  126 |         pcl::search::KdTree<pcl::PointXYZ[01;31m[K>[m[K::Ptr tree(new pcl::search::KdTree<pcl::PointXYZ>);
+      |                                          [01;31m[K^[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:126:45:[m[K [01;31m[Kerror: [m[K‘[01m[K::Ptr[m[K’ has not been declared
+  126 |         pcl::search::KdTree<pcl::PointXYZ>::[01;31m[KPtr[m[K tree(new pcl::search::KdTree<pcl::PointXYZ>);
+      |                                             [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:127:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktree[m[K’ was not declared in this scope; did you mean ‘[01m[Ktee[m[K’?
+  127 |         [01;31m[Ktree[m[K->setInputCloud(cloud_no_ground);
+      |         [01;31m[K^~~~[m[K
+      |         [32m[Ktee[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:130:14:[m[K [01;31m[Kerror: [m[K‘[01m[KEuclideanClusterExtraction[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+  130 |         pcl::[01;31m[KEuclideanClusterExtraction[m[K<pcl::PointXYZ> ec;
+      |              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:130:54:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  130 |         pcl::EuclideanClusterExtraction<pcl::PointXYZ[01;31m[K>[m[K ec;
+      |                                                      [01;31m[K^[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:130:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kec[m[K’ was not declared in this scope
+  130 |         pcl::EuclideanClusterExtraction<pcl::PointXYZ> [01;31m[Kec[m[K;
+      |                                                        [01;31m[K^~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:152:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kobs_cloud_pub_[m[K’?
+  152 |         [01;31m[Kcloud_pub_[m[K->publish(output);
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[Kobs_cloud_pub_[m[K
+gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gps_navigator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

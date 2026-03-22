@@ -1,0 +1,18 @@
+[35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In member function ‘[01m[Kvoid TangentBugLite::gps_cb(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:88:14:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto now[m[K’
+   88 |         auto [01;31m[Know[m[K = this->now();
+      |              [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:84:14:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Krclcpp::Time now[m[K’
+   84 |         auto [01;36m[Know[m[K = this->get_clock()->now(); // Use the node clock
+      |              [01;36m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:89:16:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdouble elapsed[m[K’
+   89 |         double [01;31m[Kelapsed[m[K = (now - state_start_time_).seconds();
+      |                [01;31m[K^~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:85:16:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble elapsed[m[K’ previously declared here
+   85 |         double [01;36m[Kelapsed[m[K = (now - state_start_time_).seconds();
+      |                [01;36m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gps_navigator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,14 @@
+[0.009s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target obstacle_detector[0m
+[0.056s] [ 25%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[0.059s] [ 75%] Built target obstacle_detector
+[3.851s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:28:66:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Krclcpp::Subscription<sensor_msgs::msg::NavSatFix_<std::allocator<void> > >::SharedPtr AutonomousNavigation::location_sub_[m[K’
+[3.851s]    28 |     rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr [01;31m[Klocation_sub_[m[K;
+[3.852s]       |                                                                  [01;31m[K^~~~~~~~~~~~~[m[K
+[3.852s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:23:66:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Krclcpp::Subscription<sensor_msgs::msg::NavSatFix_<std::allocator<void> > >::SharedPtr AutonomousNavigation::location_sub_[m[K’
+[3.852s]    23 |     rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr [01;36m[Klocation_sub_[m[K;
+[3.852s]       |                                                                  [01;36m[K^~~~~~~~~~~~~[m[K
+[7.453s] gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+[7.453s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gps_navigator.dir/all] Error 2
+[7.453s] gmake: *** [Makefile:146: all] Error 2
+[7.455s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8

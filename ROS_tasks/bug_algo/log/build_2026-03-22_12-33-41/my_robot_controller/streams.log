@@ -1,0 +1,14 @@
+[0.009s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[0.042s] [35m[1mConsolidate compiler generated dependencies of target gps_navigator[0m
+[0.055s] [ 25%] [32mBuilding CXX object CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o[0m
+[0.060s] [ 50%] [32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o[0m
+[0.070s] [ 75%] [32m[1mLinking CXX executable obstacle_detector[0m
+[14.508s] [100%] [32m[1mLinking CXX executable gps_navigator[0m
+[16.783s] [100%] Built target gps_navigator
+[27.716s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[27.716s] (.text+0x1b): undefined reference to `main'
+[27.720s] collect2: error: ld returned 1 exit status
+[27.721s] gmake[2]: *** [CMakeFiles/obstacle_detector.dir/build.make:299: obstacle_detector] Error 1
+[27.721s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/obstacle_detector.dir/all] Error 2
+[27.721s] gmake: *** [Makefile:146: all] Error 2
+[27.723s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8

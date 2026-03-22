@@ -1,0 +1,369 @@
+[0.000000] (-) TimerEvent: {}
+[0.000634] (my_robot_controller) JobQueued: {'identifier': 'my_robot_controller', 'dependencies': OrderedDict()}
+[0.000671] (my_robot_controller) JobStarted: {'identifier': 'my_robot_controller'}
+[0.010393] (my_robot_controller) JobProgress: {'identifier': 'my_robot_controller', 'progress': 'cmake'}
+[0.012157] (my_robot_controller) JobProgress: {'identifier': 'my_robot_controller', 'progress': 'build'}
+[0.014226] (my_robot_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hrishik/robot_ws/build/my_robot_controller', '--', '-j8', '-l8'], 'cwd': '/home/hrishik/robot_ws/build/my_robot_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'hrishik'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hrishik/ros2_ws/install/ublox_gps/lib:/home/hrishik/ros2_ws/install/ublox_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hrishik'), ('OLDPWD', '/home/hrishik/robot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1663'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hrishik/robot_ws/install:/home/hrishik/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hrishik'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hrishik'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hrishik/anaconda3/bin:/opt/ros/humble/bin:/home/hrishik/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/hrishik-Inspiron-15-3511:@/tmp/.ICE-unix/1634,unix/hrishik-Inspiron-15-3511:/tmp/.ICE-unix/1634'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/db98589b_b7e1_41e0_8ebd_1bcc1a956438'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FEU7L3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hrishik/robot_ws/install/my_robot_controller:/home/hrishik/ros2_ws/install/group_robot:/home/hrishik/ros2_ws/install/ublox:/home/hrishik/ros2_ws/install/ublox_gps:/home/hrishik/ros2_ws/install/ublox_msgs:/home/hrishik/ros2_ws/install/ublox_serialization:/home/hrishik/ros2_ws/install/rtk_bridge:/home/hrishik/ros2_ws/install/robot:/home/hrishik/ros2_ws/install/gps_reader:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_IP', '127.0.0.1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hrishik/robot_ws/build/my_robot_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hrishik/ros2_ws/install/ublox_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hrishik/robot_ws/install/my_robot_controller:/home/hrishik/ros2_ws/install/group_robot:/home/hrishik/ros2_ws/install/ublox:/home/hrishik/ros2_ws/install/ublox_gps:/home/hrishik/ros2_ws/install/ublox_msgs:/home/hrishik/ros2_ws/install/ublox_serialization:/home/hrishik/ros2_ws/install/rtk_bridge:/home/hrishik/ros2_ws/install/robot:/home/hrishik/ros2_ws/install/gps_reader:/opt/ros/humble')]), 'shell': False}
+[0.083175] (my_robot_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gps_navigator\x1b[0m\n'}
+[0.099790] (-) TimerEvent: {}
+[0.104725] (my_robot_controller) StdoutLine: {'line': b'[ 50%] Built target obstacle_detector\n'}
+[0.119179] (my_robot_controller) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o\x1b[0m\n'}
+[0.199939] (-) TimerEvent: {}
+[0.300312] (-) TimerEvent: {}
+[0.400751] (-) TimerEvent: {}
+[0.501131] (-) TimerEvent: {}
+[0.601449] (-) TimerEvent: {}
+[0.701773] (-) TimerEvent: {}
+[0.802129] (-) TimerEvent: {}
+[0.902628] (-) TimerEvent: {}
+[1.003181] (-) TimerEvent: {}
+[1.103768] (-) TimerEvent: {}
+[1.204356] (-) TimerEvent: {}
+[1.304732] (-) TimerEvent: {}
+[1.405293] (-) TimerEvent: {}
+[1.505899] (-) TimerEvent: {}
+[1.606328] (-) TimerEvent: {}
+[1.706937] (-) TimerEvent: {}
+[1.807321] (-) TimerEvent: {}
+[1.907682] (-) TimerEvent: {}
+[2.008082] (-) TimerEvent: {}
+[2.108498] (-) TimerEvent: {}
+[2.208896] (-) TimerEvent: {}
+[2.309262] (-) TimerEvent: {}
+[2.409737] (-) TimerEvent: {}
+[2.510387] (-) TimerEvent: {}
+[2.610768] (-) TimerEvent: {}
+[2.711250] (-) TimerEvent: {}
+[2.811685] (-) TimerEvent: {}
+[2.912444] (-) TimerEvent: {}
+[3.012941] (-) TimerEvent: {}
+[3.113410] (-) TimerEvent: {}
+[3.213828] (-) TimerEvent: {}
+[3.314198] (-) TimerEvent: {}
+[3.414533] (-) TimerEvent: {}
+[3.514873] (-) TimerEvent: {}
+[3.615292] (-) TimerEvent: {}
+[3.715657] (-) TimerEvent: {}
+[3.816017] (-) TimerEvent: {}
+[3.916388] (-) TimerEvent: {}
+[4.016753] (-) TimerEvent: {}
+[4.117191] (-) TimerEvent: {}
+[4.217635] (-) TimerEvent: {}
+[4.317983] (-) TimerEvent: {}
+[4.418332] (-) TimerEvent: {}
+[4.518701] (-) TimerEvent: {}
+[4.619081] (-) TimerEvent: {}
+[4.719436] (-) TimerEvent: {}
+[4.819880] (-) TimerEvent: {}
+[4.920353] (-) TimerEvent: {}
+[5.020699] (-) TimerEvent: {}
+[5.121075] (-) TimerEvent: {}
+[5.221643] (-) TimerEvent: {}
+[5.322277] (-) TimerEvent: {}
+[5.422658] (-) TimerEvent: {}
+[5.523079] (-) TimerEvent: {}
+[5.623450] (-) TimerEvent: {}
+[5.723886] (-) TimerEvent: {}
+[5.824272] (-) TimerEvent: {}
+[5.924704] (-) TimerEvent: {}
+[6.025128] (-) TimerEvent: {}
+[6.125510] (-) TimerEvent: {}
+[6.225930] (-) TimerEvent: {}
+[6.326392] (-) TimerEvent: {}
+[6.426906] (-) TimerEvent: {}
+[6.527509] (-) TimerEvent: {}
+[6.627946] (-) TimerEvent: {}
+[6.728344] (-) TimerEvent: {}
+[6.828774] (-) TimerEvent: {}
+[6.929510] (-) TimerEvent: {}
+[7.029957] (-) TimerEvent: {}
+[7.130334] (-) TimerEvent: {}
+[7.230732] (-) TimerEvent: {}
+[7.331096] (-) TimerEvent: {}
+[7.431634] (-) TimerEvent: {}
+[7.532267] (-) TimerEvent: {}
+[7.633372] (-) TimerEvent: {}
+[7.734218] (-) TimerEvent: {}
+[7.834679] (-) TimerEvent: {}
+[7.935129] (-) TimerEvent: {}
+[8.039170] (-) TimerEvent: {}
+[8.139660] (-) TimerEvent: {}
+[8.240063] (-) TimerEvent: {}
+[8.340457] (-) TimerEvent: {}
+[8.440915] (-) TimerEvent: {}
+[8.541482] (-) TimerEvent: {}
+[8.641827] (-) TimerEvent: {}
+[8.742394] (-) TimerEvent: {}
+[8.842872] (-) TimerEvent: {}
+[8.943343] (-) TimerEvent: {}
+[9.043789] (-) TimerEvent: {}
+[9.144382] (-) TimerEvent: {}
+[9.244920] (-) TimerEvent: {}
+[9.345411] (-) TimerEvent: {}
+[9.445931] (-) TimerEvent: {}
+[9.546426] (-) TimerEvent: {}
+[9.646734] (-) TimerEvent: {}
+[9.747270] (-) TimerEvent: {}
+[9.847633] (-) TimerEvent: {}
+[9.948042] (-) TimerEvent: {}
+[10.048416] (-) TimerEvent: {}
+[10.148799] (-) TimerEvent: {}
+[10.249197] (-) TimerEvent: {}
+[10.349588] (-) TimerEvent: {}
+[10.449941] (-) TimerEvent: {}
+[10.550285] (-) TimerEvent: {}
+[10.650708] (-) TimerEvent: {}
+[10.751042] (-) TimerEvent: {}
+[10.851397] (-) TimerEvent: {}
+[10.951782] (-) TimerEvent: {}
+[11.052182] (-) TimerEvent: {}
+[11.152549] (-) TimerEvent: {}
+[11.252920] (-) TimerEvent: {}
+[11.353285] (-) TimerEvent: {}
+[11.453719] (-) TimerEvent: {}
+[11.554109] (-) TimerEvent: {}
+[11.654800] (-) TimerEvent: {}
+[11.755344] (-) TimerEvent: {}
+[11.855875] (-) TimerEvent: {}
+[11.956606] (-) TimerEvent: {}
+[12.057185] (-) TimerEvent: {}
+[12.157594] (-) TimerEvent: {}
+[12.257981] (-) TimerEvent: {}
+[12.358353] (-) TimerEvent: {}
+[12.458763] (-) TimerEvent: {}
+[12.559199] (-) TimerEvent: {}
+[12.659580] (-) TimerEvent: {}
+[12.759939] (-) TimerEvent: {}
+[12.860427] (-) TimerEvent: {}
+[12.960897] (-) TimerEvent: {}
+[13.061566] (-) TimerEvent: {}
+[13.162033] (-) TimerEvent: {}
+[13.262497] (-) TimerEvent: {}
+[13.362951] (-) TimerEvent: {}
+[13.463447] (-) TimerEvent: {}
+[13.563785] (-) TimerEvent: {}
+[13.664175] (-) TimerEvent: {}
+[13.764583] (-) TimerEvent: {}
+[13.865064] (-) TimerEvent: {}
+[13.965432] (-) TimerEvent: {}
+[14.065763] (-) TimerEvent: {}
+[14.166237] (-) TimerEvent: {}
+[14.266672] (-) TimerEvent: {}
+[14.367068] (-) TimerEvent: {}
+[14.467525] (-) TimerEvent: {}
+[14.567926] (-) TimerEvent: {}
+[14.668332] (-) TimerEvent: {}
+[14.768871] (-) TimerEvent: {}
+[14.869392] (-) TimerEvent: {}
+[14.970029] (-) TimerEvent: {}
+[15.070626] (-) TimerEvent: {}
+[15.171755] (-) TimerEvent: {}
+[15.272381] (-) TimerEvent: {}
+[15.372766] (-) TimerEvent: {}
+[15.473225] (-) TimerEvent: {}
+[15.573663] (-) TimerEvent: {}
+[15.674145] (-) TimerEvent: {}
+[15.774498] (-) TimerEvent: {}
+[15.874965] (-) TimerEvent: {}
+[15.975419] (-) TimerEvent: {}
+[16.075819] (-) TimerEvent: {}
+[16.176295] (-) TimerEvent: {}
+[16.276971] (-) TimerEvent: {}
+[16.377456] (-) TimerEvent: {}
+[16.477996] (-) TimerEvent: {}
+[16.578437] (-) TimerEvent: {}
+[16.678816] (-) TimerEvent: {}
+[16.779266] (-) TimerEvent: {}
+[16.879643] (-) TimerEvent: {}
+[16.980054] (-) TimerEvent: {}
+[17.080447] (-) TimerEvent: {}
+[17.180892] (-) TimerEvent: {}
+[17.281353] (-) TimerEvent: {}
+[17.381843] (-) TimerEvent: {}
+[17.482388] (-) TimerEvent: {}
+[17.583939] (-) TimerEvent: {}
+[17.684407] (-) TimerEvent: {}
+[17.784796] (-) TimerEvent: {}
+[17.885188] (-) TimerEvent: {}
+[17.985597] (-) TimerEvent: {}
+[18.086082] (-) TimerEvent: {}
+[18.186551] (-) TimerEvent: {}
+[18.287047] (-) TimerEvent: {}
+[18.387433] (-) TimerEvent: {}
+[18.487790] (-) TimerEvent: {}
+[18.588220] (-) TimerEvent: {}
+[18.688604] (-) TimerEvent: {}
+[18.788987] (-) TimerEvent: {}
+[18.889408] (-) TimerEvent: {}
+[18.989814] (-) TimerEvent: {}
+[19.090222] (-) TimerEvent: {}
+[19.190582] (-) TimerEvent: {}
+[19.291080] (-) TimerEvent: {}
+[19.391696] (-) TimerEvent: {}
+[19.492176] (-) TimerEvent: {}
+[19.592686] (-) TimerEvent: {}
+[19.693213] (-) TimerEvent: {}
+[19.793597] (-) TimerEvent: {}
+[19.894081] (-) TimerEvent: {}
+[19.994456] (-) TimerEvent: {}
+[20.094867] (-) TimerEvent: {}
+[20.195313] (-) TimerEvent: {}
+[20.295795] (-) TimerEvent: {}
+[20.396428] (-) TimerEvent: {}
+[20.497200] (-) TimerEvent: {}
+[20.597643] (-) TimerEvent: {}
+[20.698120] (-) TimerEvent: {}
+[20.798649] (-) TimerEvent: {}
+[20.899030] (-) TimerEvent: {}
+[20.999447] (-) TimerEvent: {}
+[21.099975] (-) TimerEvent: {}
+[21.200372] (-) TimerEvent: {}
+[21.300932] (-) TimerEvent: {}
+[21.401356] (-) TimerEvent: {}
+[21.501801] (-) TimerEvent: {}
+[21.602340] (-) TimerEvent: {}
+[21.702688] (-) TimerEvent: {}
+[21.803425] (-) TimerEvent: {}
+[21.903959] (-) TimerEvent: {}
+[22.004376] (-) TimerEvent: {}
+[22.104940] (-) TimerEvent: {}
+[22.205399] (-) TimerEvent: {}
+[22.305844] (-) TimerEvent: {}
+[22.406251] (-) TimerEvent: {}
+[22.506618] (-) TimerEvent: {}
+[22.607157] (-) TimerEvent: {}
+[22.707545] (-) TimerEvent: {}
+[22.808278] (-) TimerEvent: {}
+[22.908768] (-) TimerEvent: {}
+[23.009211] (-) TimerEvent: {}
+[23.109702] (-) TimerEvent: {}
+[23.210222] (-) TimerEvent: {}
+[23.310673] (-) TimerEvent: {}
+[23.411048] (-) TimerEvent: {}
+[23.511407] (-) TimerEvent: {}
+[23.611742] (-) TimerEvent: {}
+[23.712074] (-) TimerEvent: {}
+[23.812422] (-) TimerEvent: {}
+[23.912791] (-) TimerEvent: {}
+[24.013258] (-) TimerEvent: {}
+[24.113761] (-) TimerEvent: {}
+[24.214379] (-) TimerEvent: {}
+[24.314822] (-) TimerEvent: {}
+[24.415442] (-) TimerEvent: {}
+[24.515770] (-) TimerEvent: {}
+[24.616362] (-) TimerEvent: {}
+[24.716960] (-) TimerEvent: {}
+[24.817433] (-) TimerEvent: {}
+[24.917982] (-) TimerEvent: {}
+[25.018480] (-) TimerEvent: {}
+[25.119001] (-) TimerEvent: {}
+[25.219687] (-) TimerEvent: {}
+[25.320126] (-) TimerEvent: {}
+[25.420607] (-) TimerEvent: {}
+[25.521346] (-) TimerEvent: {}
+[25.621782] (-) TimerEvent: {}
+[25.722424] (-) TimerEvent: {}
+[25.822847] (-) TimerEvent: {}
+[25.923261] (-) TimerEvent: {}
+[26.023601] (-) TimerEvent: {}
+[26.124109] (-) TimerEvent: {}
+[26.224460] (-) TimerEvent: {}
+[26.324804] (-) TimerEvent: {}
+[26.425493] (-) TimerEvent: {}
+[26.525871] (-) TimerEvent: {}
+[26.626240] (-) TimerEvent: {}
+[26.726592] (-) TimerEvent: {}
+[26.827034] (-) TimerEvent: {}
+[26.927388] (-) TimerEvent: {}
+[27.027714] (-) TimerEvent: {}
+[27.128117] (-) TimerEvent: {}
+[27.228688] (-) TimerEvent: {}
+[27.329329] (-) TimerEvent: {}
+[27.429655] (-) TimerEvent: {}
+[27.530084] (-) TimerEvent: {}
+[27.630690] (-) TimerEvent: {}
+[27.731016] (-) TimerEvent: {}
+[27.831546] (-) TimerEvent: {}
+[27.932023] (-) TimerEvent: {}
+[28.032347] (-) TimerEvent: {}
+[28.132808] (-) TimerEvent: {}
+[28.233430] (-) TimerEvent: {}
+[28.333744] (-) TimerEvent: {}
+[28.434107] (-) TimerEvent: {}
+[28.534610] (-) TimerEvent: {}
+[28.635085] (-) TimerEvent: {}
+[28.735587] (-) TimerEvent: {}
+[28.836245] (-) TimerEvent: {}
+[28.936762] (-) TimerEvent: {}
+[29.037342] (-) TimerEvent: {}
+[29.137739] (-) TimerEvent: {}
+[29.238344] (-) TimerEvent: {}
+[29.338752] (-) TimerEvent: {}
+[29.439142] (-) TimerEvent: {}
+[29.539605] (-) TimerEvent: {}
+[29.639934] (-) TimerEvent: {}
+[29.740283] (-) TimerEvent: {}
+[29.840684] (-) TimerEvent: {}
+[29.941118] (-) TimerEvent: {}
+[30.041733] (-) TimerEvent: {}
+[30.142172] (-) TimerEvent: {}
+[30.242707] (-) TimerEvent: {}
+[30.343123] (-) TimerEvent: {}
+[30.443470] (-) TimerEvent: {}
+[30.543819] (-) TimerEvent: {}
+[30.644341] (-) TimerEvent: {}
+[30.689195] (my_robot_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable gps_navigator\x1b[0m\n'}
+[30.744495] (-) TimerEvent: {}
+[30.844912] (-) TimerEvent: {}
+[30.945374] (-) TimerEvent: {}
+[31.045765] (-) TimerEvent: {}
+[31.146135] (-) TimerEvent: {}
+[31.246559] (-) TimerEvent: {}
+[31.346926] (-) TimerEvent: {}
+[31.447258] (-) TimerEvent: {}
+[31.547613] (-) TimerEvent: {}
+[31.647985] (-) TimerEvent: {}
+[31.748336] (-) TimerEvent: {}
+[31.848689] (-) TimerEvent: {}
+[31.949064] (-) TimerEvent: {}
+[32.049435] (-) TimerEvent: {}
+[32.149924] (-) TimerEvent: {}
+[32.250351] (-) TimerEvent: {}
+[32.350757] (-) TimerEvent: {}
+[32.451274] (-) TimerEvent: {}
+[32.551677] (-) TimerEvent: {}
+[32.652091] (-) TimerEvent: {}
+[32.752535] (-) TimerEvent: {}
+[32.827394] (my_robot_controller) StdoutLine: {'line': b'[100%] Built target gps_navigator\n'}
+[32.852684] (-) TimerEvent: {}
+[32.953061] (-) TimerEvent: {}
+[32.999904] (my_robot_controller) CommandEnded: {'returncode': 0}
+[33.000666] (my_robot_controller) JobProgress: {'identifier': 'my_robot_controller', 'progress': 'install'}
+[33.012693] (my_robot_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hrishik/robot_ws/build/my_robot_controller'], 'cwd': '/home/hrishik/robot_ws/build/my_robot_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'hrishik'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hrishik/ros2_ws/install/ublox_gps/lib:/home/hrishik/ros2_ws/install/ublox_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hrishik'), ('OLDPWD', '/home/hrishik/robot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1663'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hrishik/robot_ws/install:/home/hrishik/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hrishik'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hrishik'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hrishik/anaconda3/bin:/opt/ros/humble/bin:/home/hrishik/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/hrishik-Inspiron-15-3511:@/tmp/.ICE-unix/1634,unix/hrishik-Inspiron-15-3511:/tmp/.ICE-unix/1634'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/db98589b_b7e1_41e0_8ebd_1bcc1a956438'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FEU7L3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hrishik/robot_ws/install/my_robot_controller:/home/hrishik/ros2_ws/install/group_robot:/home/hrishik/ros2_ws/install/ublox:/home/hrishik/ros2_ws/install/ublox_gps:/home/hrishik/ros2_ws/install/ublox_msgs:/home/hrishik/ros2_ws/install/ublox_serialization:/home/hrishik/ros2_ws/install/rtk_bridge:/home/hrishik/ros2_ws/install/robot:/home/hrishik/ros2_ws/install/gps_reader:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_IP', '127.0.0.1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hrishik/robot_ws/build/my_robot_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hrishik/ros2_ws/install/ublox_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hrishik/robot_ws/install/my_robot_controller:/home/hrishik/ros2_ws/install/group_robot:/home/hrishik/ros2_ws/install/ublox:/home/hrishik/ros2_ws/install/ublox_gps:/home/hrishik/ros2_ws/install/ublox_msgs:/home/hrishik/ros2_ws/install/ublox_serialization:/home/hrishik/ros2_ws/install/rtk_bridge:/home/hrishik/ros2_ws/install/robot:/home/hrishik/ros2_ws/install/gps_reader:/opt/ros/humble')]), 'shell': False}
+[33.020805] (my_robot_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[33.021172] (my_robot_controller) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[33.021336] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/lib/my_robot_controller/gps_navigator\n'}
+[33.021516] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/lib/my_robot_controller/obstacle_detector\n'}
+[33.021917] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/launch/navigation.launch.py\n'}
+[33.022134] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/urdf/robot.gazebo.xacro\n'}
+[33.022272] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/urdf/robot.urdf.xacro\n'}
+[33.022848] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/worlds/ground.world\n'}
+[33.023181] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/ament_index/resource_index/package_run_dependencies/my_robot_controller\n'}
+[33.023739] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/ament_index/resource_index/parent_prefix_path/my_robot_controller\n'}
+[33.024129] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/environment/ament_prefix_path.sh\n'}
+[33.024722] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/environment/ament_prefix_path.dsv\n'}
+[33.024980] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/environment/path.sh\n'}
+[33.025166] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/environment/path.dsv\n'}
+[33.025479] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/local_setup.bash\n'}
+[33.025618] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/local_setup.sh\n'}
+[33.025876] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/local_setup.zsh\n'}
+[33.026232] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/local_setup.dsv\n'}
+[33.026450] (my_robot_controller) StdoutLine: {'line': b'-- Symlinking: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/package.dsv\n'}
+[33.036920] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/ament_index/resource_index/packages/my_robot_controller\n'}
+[33.037184] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/cmake/my_robot_controllerConfig.cmake\n'}
+[33.037299] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/cmake/my_robot_controllerConfig-version.cmake\n'}
+[33.037441] (my_robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/hrishik/robot_ws/install/my_robot_controller/share/my_robot_controller/package.xml\n'}
+[33.040004] (my_robot_controller) CommandEnded: {'returncode': 0}
+[33.053271] (-) TimerEvent: {}
+[33.063292] (my_robot_controller) JobEnded: {'identifier': 'my_robot_controller', 'rc': 0}
+[33.064043] (-) EventReactorShutdown: {}

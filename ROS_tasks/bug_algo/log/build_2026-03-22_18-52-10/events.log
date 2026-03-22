@@ -1,0 +1,166 @@
+[0.000000] (-) TimerEvent: {}
+[0.000598] (my_robot_controller) JobQueued: {'identifier': 'my_robot_controller', 'dependencies': OrderedDict()}
+[0.001805] (my_robot_controller) JobStarted: {'identifier': 'my_robot_controller'}
+[0.020059] (my_robot_controller) JobProgress: {'identifier': 'my_robot_controller', 'progress': 'cmake'}
+[0.029424] (my_robot_controller) JobProgress: {'identifier': 'my_robot_controller', 'progress': 'build'}
+[0.030754] (my_robot_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hrishik/robot_ws/build/my_robot_controller', '--', '-j8', '-l8'], 'cwd': '/home/hrishik/robot_ws/build/my_robot_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'hrishik'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hrishik/ros2_ws/install/ublox_gps/lib:/home/hrishik/ros2_ws/install/ublox_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hrishik'), ('OLDPWD', '/home/hrishik/robot_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1663'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hrishik/robot_ws/install:/home/hrishik/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hrishik'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hrishik'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/hrishik/anaconda3/bin:/opt/ros/humble/bin:/home/hrishik/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/hrishik-Inspiron-15-3511:@/tmp/.ICE-unix/1634,unix/hrishik-Inspiron-15-3511:/tmp/.ICE-unix/1634'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/db98589b_b7e1_41e0_8ebd_1bcc1a956438'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FEU7L3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.156'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hrishik/robot_ws/install/my_robot_controller:/home/hrishik/ros2_ws/install/group_robot:/home/hrishik/ros2_ws/install/ublox:/home/hrishik/ros2_ws/install/ublox_gps:/home/hrishik/ros2_ws/install/ublox_msgs:/home/hrishik/ros2_ws/install/ublox_serialization:/home/hrishik/ros2_ws/install/rtk_bridge:/home/hrishik/ros2_ws/install/robot:/home/hrishik/ros2_ws/install/gps_reader:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_IP', '127.0.0.1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hrishik/robot_ws/build/my_robot_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hrishik/ros2_ws/install/ublox_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hrishik/robot_ws/install/my_robot_controller:/home/hrishik/ros2_ws/install/group_robot:/home/hrishik/ros2_ws/install/ublox:/home/hrishik/ros2_ws/install/ublox_gps:/home/hrishik/ros2_ws/install/ublox_msgs:/home/hrishik/ros2_ws/install/ublox_serialization:/home/hrishik/ros2_ws/install/rtk_bridge:/home/hrishik/ros2_ws/install/robot:/home/hrishik/ros2_ws/install/gps_reader:/opt/ros/humble')]), 'shell': False}
+[0.099395] (-) TimerEvent: {}
+[0.102684] (my_robot_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gps_navigator\x1b[0m\n'}
+[0.126374] (my_robot_controller) StdoutLine: {'line': b'[ 50%] Built target obstacle_detector\n'}
+[0.145734] (my_robot_controller) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o\x1b[0m\n'}
+[0.199575] (-) TimerEvent: {}
+[0.300064] (-) TimerEvent: {}
+[0.400611] (-) TimerEvent: {}
+[0.501064] (-) TimerEvent: {}
+[0.601565] (-) TimerEvent: {}
+[0.702001] (-) TimerEvent: {}
+[0.802707] (-) TimerEvent: {}
+[0.903333] (-) TimerEvent: {}
+[1.004033] (-) TimerEvent: {}
+[1.104447] (-) TimerEvent: {}
+[1.204846] (-) TimerEvent: {}
+[1.305229] (-) TimerEvent: {}
+[1.405744] (-) TimerEvent: {}
+[1.506157] (-) TimerEvent: {}
+[1.606501] (-) TimerEvent: {}
+[1.707129] (-) TimerEvent: {}
+[1.807678] (-) TimerEvent: {}
+[1.908127] (-) TimerEvent: {}
+[2.008492] (-) TimerEvent: {}
+[2.108842] (-) TimerEvent: {}
+[2.209200] (-) TimerEvent: {}
+[2.309558] (-) TimerEvent: {}
+[2.409909] (-) TimerEvent: {}
+[2.510238] (-) TimerEvent: {}
+[2.610590] (-) TimerEvent: {}
+[2.710945] (-) TimerEvent: {}
+[2.811479] (-) TimerEvent: {}
+[2.911836] (-) TimerEvent: {}
+[3.012332] (-) TimerEvent: {}
+[3.112730] (-) TimerEvent: {}
+[3.213264] (-) TimerEvent: {}
+[3.313621] (-) TimerEvent: {}
+[3.414135] (-) TimerEvent: {}
+[3.514786] (-) TimerEvent: {}
+[3.615557] (-) TimerEvent: {}
+[3.715936] (-) TimerEvent: {}
+[3.816543] (-) TimerEvent: {}
+[3.917133] (-) TimerEvent: {}
+[4.017551] (-) TimerEvent: {}
+[4.117952] (-) TimerEvent: {}
+[4.218426] (-) TimerEvent: {}
+[4.318986] (-) TimerEvent: {}
+[4.419414] (-) TimerEvent: {}
+[4.519937] (-) TimerEvent: {}
+[4.620422] (-) TimerEvent: {}
+[4.720890] (-) TimerEvent: {}
+[4.821281] (-) TimerEvent: {}
+[4.921715] (-) TimerEvent: {}
+[5.022087] (-) TimerEvent: {}
+[5.122694] (-) TimerEvent: {}
+[5.223208] (-) TimerEvent: {}
+[5.323719] (-) TimerEvent: {}
+[5.424225] (-) TimerEvent: {}
+[5.524848] (-) TimerEvent: {}
+[5.625368] (-) TimerEvent: {}
+[5.725716] (-) TimerEvent: {}
+[5.826064] (-) TimerEvent: {}
+[5.926385] (-) TimerEvent: {}
+[6.026846] (-) TimerEvent: {}
+[6.127362] (-) TimerEvent: {}
+[6.227747] (-) TimerEvent: {}
+[6.328079] (-) TimerEvent: {}
+[6.428512] (-) TimerEvent: {}
+[6.529096] (-) TimerEvent: {}
+[6.629452] (-) TimerEvent: {}
+[6.730014] (-) TimerEvent: {}
+[6.830374] (-) TimerEvent: {}
+[6.930853] (-) TimerEvent: {}
+[7.031320] (-) TimerEvent: {}
+[7.103388] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GPSNavigator::controlLoop()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.103682] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:230:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kelse\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.103797] (my_robot_controller) StderrLine: {'line': b'  230 |             \x1b[01;31m\x1b[Kelse\x1b[m\x1b[K\n'}
+[7.103895] (my_robot_controller) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.103994] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:192:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.104098] (my_robot_controller) StderrLine: {'line': b'  192 |         \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[7.104191] (my_robot_controller) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[7.104874] (my_robot_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:180:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kyaw_err\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.105080] (my_robot_controller) StderrLine: {'line': b'  180 |         double \x1b[01;35m\x1b[Kyaw_err\x1b[m\x1b[K = normalize(target_yaw - cur_yaw_);\n'}
+[7.105169] (my_robot_controller) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.131571] (-) TimerEvent: {}
+[7.232014] (-) TimerEvent: {}
+[7.332381] (-) TimerEvent: {}
+[7.432781] (-) TimerEvent: {}
+[7.533130] (-) TimerEvent: {}
+[7.633466] (-) TimerEvent: {}
+[7.733812] (-) TimerEvent: {}
+[7.834139] (-) TimerEvent: {}
+[7.934631] (-) TimerEvent: {}
+[8.035187] (-) TimerEvent: {}
+[8.135819] (-) TimerEvent: {}
+[8.236390] (-) TimerEvent: {}
+[8.336851] (-) TimerEvent: {}
+[8.437213] (-) TimerEvent: {}
+[8.537626] (-) TimerEvent: {}
+[8.638054] (-) TimerEvent: {}
+[8.738467] (-) TimerEvent: {}
+[8.838927] (-) TimerEvent: {}
+[8.939298] (-) TimerEvent: {}
+[9.039861] (-) TimerEvent: {}
+[9.140346] (-) TimerEvent: {}
+[9.240704] (-) TimerEvent: {}
+[9.341086] (-) TimerEvent: {}
+[9.441464] (-) TimerEvent: {}
+[9.541870] (-) TimerEvent: {}
+[9.642252] (-) TimerEvent: {}
+[9.742571] (-) TimerEvent: {}
+[9.842961] (-) TimerEvent: {}
+[9.943415] (-) TimerEvent: {}
+[10.043796] (-) TimerEvent: {}
+[10.144308] (-) TimerEvent: {}
+[10.244845] (-) TimerEvent: {}
+[10.345336] (-) TimerEvent: {}
+[10.445934] (-) TimerEvent: {}
+[10.546462] (-) TimerEvent: {}
+[10.646879] (-) TimerEvent: {}
+[10.747634] (-) TimerEvent: {}
+[10.848082] (-) TimerEvent: {}
+[10.948559] (-) TimerEvent: {}
+[11.048994] (-) TimerEvent: {}
+[11.149396] (-) TimerEvent: {}
+[11.249892] (-) TimerEvent: {}
+[11.350275] (-) TimerEvent: {}
+[11.450751] (-) TimerEvent: {}
+[11.551105] (-) TimerEvent: {}
+[11.651415] (-) TimerEvent: {}
+[11.751871] (-) TimerEvent: {}
+[11.852236] (-) TimerEvent: {}
+[11.952976] (-) TimerEvent: {}
+[12.053430] (-) TimerEvent: {}
+[12.154047] (-) TimerEvent: {}
+[12.254524] (-) TimerEvent: {}
+[12.354883] (-) TimerEvent: {}
+[12.455224] (-) TimerEvent: {}
+[12.555662] (-) TimerEvent: {}
+[12.656273] (-) TimerEvent: {}
+[12.756651] (-) TimerEvent: {}
+[12.856973] (-) TimerEvent: {}
+[12.957302] (-) TimerEvent: {}
+[13.066062] (-) TimerEvent: {}
+[13.166434] (-) TimerEvent: {}
+[13.266801] (-) TimerEvent: {}
+[13.367207] (-) TimerEvent: {}
+[13.467702] (-) TimerEvent: {}
+[13.568141] (-) TimerEvent: {}
+[13.668479] (-) TimerEvent: {}
+[13.768922] (-) TimerEvent: {}
+[13.869596] (-) TimerEvent: {}
+[13.970056] (-) TimerEvent: {}
+[14.070547] (-) TimerEvent: {}
+[14.170980] (-) TimerEvent: {}
+[14.189263] (my_robot_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1\n'}
+[14.189744] (my_robot_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gps_navigator.dir/all] Error 2\n'}
+[14.190093] (my_robot_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[14.192994] (my_robot_controller) CommandEnded: {'returncode': 2}
+[14.208820] (my_robot_controller) JobEnded: {'identifier': 'my_robot_controller', 'rc': 2}
+[14.219801] (-) EventReactorShutdown: {}

@@ -1,0 +1,391 @@
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:80:47:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[Knew[m[K’
+   80 |     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud([01;31m[Knew[m[K pcl::PointCloud<pcl::PointXYZ>);
+      |                                               [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:80:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Knew[m[K’
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:81:21:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K*[m[K’ token
+   81 |     pcl::fromROSMsg([01;31m[K*[m[Kcloud_msg, *cloud);
+      |                     [01;31m[K^[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:81:33:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K*[m[K’ token
+   81 |     pcl::fromROSMsg(*cloud_msg, [01;31m[K*[m[Kcloud);
+      |                                 [01;31m[K^[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:81:5:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KfromROSMsg[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   81 |     [01;31m[Kpcl[m[K::fromROSMsg(*cloud_msg, *cloud);
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:81:5:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[K::[m[K’
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:82:10:[m[K [01;31m[Kerror: [m[K‘[01m[KPassThrough[m[K’ in namespace ‘[01m[Kpcl[m[K’ does not name a template type
+   82 |     pcl::[01;31m[KPassThrough[m[K<pcl::PointXYZ> pass;
+      |          [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:83:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpass[m[K’ does not name a type
+   83 |     [01;31m[Kpass[m[K.setInputCloud(cloud);
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:84:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpass[m[K’ does not name a type
+   84 |     [01;31m[Kpass[m[K.setFilterFieldName("y");
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:85:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpass[m[K’ does not name a type
+   85 |     [01;31m[Kpass[m[K.setFilterLimits(0.05, 1.0); // Ignore anything below 5cm and above 1 meter
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:86:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpass[m[K’ does not name a type
+   86 |     [01;31m[Kpass[m[K.filter(*cloud);
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:87:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpass[m[K’ does not name a type
+   87 |     [01;31m[Kpass[m[K.setInputCloud(cloud);
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:88:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpass[m[K’ does not name a type
+   88 |     [01;31m[Kpass[m[K.setFilterFieldName("z");
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:89:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpass[m[K’ does not name a type
+   89 |     [01;31m[Kpass[m[K.setFilterLimits(0.0, 3.0); // Ignore everything further than 3 meters
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:90:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpass[m[K’ does not name a type
+   90 |     [01;31m[Kpass[m[K.filter(*cloud);
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:91:53:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[Knew[m[K’
+   91 |     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_voxel([01;31m[Knew[m[K pcl::PointCloud<pcl::PointXYZ>);
+      |                                                     [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:91:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Knew[m[K’
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:93:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoxel[m[K’ does not name a type
+   93 |     [01;31m[Kvoxel[m[K.setInputCloud(cloud);
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:94:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoxel[m[K’ does not name a type
+   94 |     [01;31m[Kvoxel[m[K.setLeafSize(0.05f, 0.05f, 0.05f);
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:95:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoxel[m[K’ does not name a type
+   95 |     [01;31m[Kvoxel[m[K.filter(*cloud_voxel);
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:98:46:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[Knew[m[K’
+   98 |     pcl::ModelCoefficients::Ptr coefficients([01;31m[Knew[m[K pcl::ModelCoefficients);
+      |                                              [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:98:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Knew[m[K’
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:99:36:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[Knew[m[K’
+   99 |     pcl::PointIndices::Ptr inliers([01;31m[Knew[m[K pcl::PointIndices);
+      |                                    [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:99:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Knew[m[K’
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:100:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kseg[m[K’ does not name a type
+  100 |     [01;31m[Kseg[m[K.setOptimizeCoefficients(true);
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:101:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kseg[m[K’ does not name a type
+  101 |     [01;31m[Kseg[m[K.setModelType(pcl::SACMODEL_PLANE);
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:102:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kseg[m[K’ does not name a type
+  102 |     [01;31m[Kseg[m[K.setMethodType(pcl::SAC_RANSAC);
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:103:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kseg[m[K’ does not name a type
+  103 |     [01;31m[Kseg[m[K.setDistanceThreshold(0.02);
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:104:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kseg[m[K’ does not name a type
+  104 |     [01;31m[Kseg[m[K.setMaxIterations(100);
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:105:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kseg[m[K’ does not name a type
+  105 |     [01;31m[Kseg[m[K.setInputCloud(cloud_voxel);
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:106:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kseg[m[K’ does not name a type
+  106 |     [01;31m[Kseg[m[K.segment(*inliers, *coefficients);
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:108:57:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[Knew[m[K’
+  108 |     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_no_ground([01;31m[Knew[m[K pcl::PointCloud<pcl::PointXYZ>);
+      |                                                         [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:108:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Knew[m[K’
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:110:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kextract[m[K’ does not name a type
+  110 |     [01;31m[Kextract[m[K.setInputCloud(cloud_voxel);
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:111:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kextract[m[K’ does not name a type
+  111 |     [01;31m[Kextract[m[K.setIndices(inliers);
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:112:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kextract[m[K’ does not name a type
+  112 |     [01;31m[Kextract[m[K.setNegative(true);
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:113:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kextract[m[K’ does not name a type
+  113 |     [01;31m[Kextract[m[K.filter(*cloud_no_ground);
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:115:50:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[Knew[m[K’
+  115 |     pcl::search::KdTree<pcl::PointXYZ>::Ptr tree([01;31m[Knew[m[K pcl::search::KdTree<pcl::PointXYZ>);
+      |                                                  [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:115:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Knew[m[K’
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:116:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktree[m[K’ does not name a type
+  116 |     [01;31m[Ktree[m[K->setInputCloud(cloud_no_ground);
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:120:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kec[m[K’ does not name a type
+  120 |     [01;31m[Kec[m[K.setClusterTolerance(0.05);
+      |     [01;31m[K^~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:121:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kec[m[K’ does not name a type
+  121 |     [01;31m[Kec[m[K.setMinClusterSize(20);
+      |     [01;31m[K^~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:122:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kec[m[K’ does not name a type
+  122 |     [01;31m[Kec[m[K.setMaxClusterSize(15000);
+      |     [01;31m[K^~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:123:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kec[m[K’ does not name a type
+  123 |     [01;31m[Kec[m[K.setSearchMethod(tree);
+      |     [01;31m[K^~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:124:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kec[m[K’ does not name a type
+  124 |     [01;31m[Kec[m[K.setInputCloud(cloud_no_ground);
+      |     [01;31m[K^~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:125:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kec[m[K’ does not name a type
+  125 |     [01;31m[Kec[m[K.extract(cluster_indices);
+      |     [01;31m[K^~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:127:57:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[Knew[m[K’
+  127 |     pcl::PointCloud<pcl::PointXYZ>::Ptr clustered_cloud([01;31m[Knew[m[K pcl::PointCloud<pcl::PointXYZ>);
+      |                                                         [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:127:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[Knew[m[K’
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:128:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kfor[m[K’
+  128 |     [01;31m[Kfor[m[K (const auto& indices : cluster_indices) {
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:134:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclustered_cloud[m[K’ does not name a type
+  134 |     [01;31m[Kclustered_cloud[m[K->width = clustered_cloud->points.size();
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:135:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclustered_cloud[m[K’ does not name a type
+  135 |     [01;31m[Kclustered_cloud[m[K->height = 1;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:136:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclustered_cloud[m[K’ does not name a type
+  136 |     [01;31m[Kclustered_cloud[m[K->is_dense = true;
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:139:19:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K*[m[K’ token
+  139 |     pcl::toROSMsg([01;31m[K*[m[Kclustered_cloud, output);
+      |                   [01;31m[K^[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:139:37:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput[m[K’ is not a type
+  139 |     pcl::toROSMsg(*clustered_cloud, [01;31m[Koutput[m[K);
+      |                                     [01;31m[K^~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:139:5:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KtoROSMsg[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  139 |     [01;31m[Kpcl[m[K::toROSMsg(*clustered_cloud, output);
+      |     [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:139:5:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[K::[m[K’
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:140:5:[m[K [01;31m[Kerror: [m[K‘[01m[Koutput[m[K’ does not name a type
+  140 |     [01;31m[Koutput[m[K.header = cloud_msg->header;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:141:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_pub_[m[K’ does not name a type
+  141 |     [01;31m[Kcloud_pub_[m[K->publish(output);
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:148:64:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdouble AutonomousNavigation::min_distance[m[K’
+  148 |         double min_distance = std::numeric_limits<double>::max([01;31m[K)[m[K;
+      |                                                                [01;31m[K^[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:144:12:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kdouble AutonomousNavigation::min_distance[m[K’
+  144 |     double [01;36m[Kmin_distance[m[K = std::numeric_limits<double>::max();
+      |            [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:149:38:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kbool AutonomousNavigation::obstacle_within_range[m[K’
+  149 |         bool obstacle_within_range = [01;31m[Kfalse[m[K;
+      |                                      [01;31m[K^~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:145:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kbool AutonomousNavigation::obstacle_within_range[m[K’
+  145 |     bool [01;36m[Kobstacle_within_range[m[K = false;
+      |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:151:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kfor[m[K’
+  151 |         [01;31m[Kfor[m[K (const auto& cluster : cluster_indices) {
+      |         [01;31m[K^~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:169:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  169 |         [01;31m[Kif[m[K (obstacle_within_range) {
+      |         [01;31m[K^~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:175:11:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+  175 |         } [01;31m[Kelse[m[K {
+      |           [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:182:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+  182 |     }
+      |      [01;31m[K^[m[K
+      |      [32m[K;[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In function ‘[01m[Kvoid gpsCallback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:185:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_reached_[m[K’ was not declared in this scope
+  185 |         if ([01;31m[Ktarget_reached_[m[K) {
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:1[m[K:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:186:34:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  186 |             RCLCPP_INFO_THROTTLE([01;31m[Kthis[m[K->get_logger(), *this->get_clock(), 2000, "IDLE: Waiting for new goal on /goal_pose...");
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:186:34:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:186:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  186 |             [01;31m[KRCLCPP_INFO_THROTTLE[m[K(this->get_logger(), *this->get_clock(), 2000, "IDLE: Waiting for new goal on /goal_pose...");
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:186:55:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  186 |             RCLCPP_INFO_THROTTLE(this->get_logger(), *[01;31m[Kthis[m[K->get_clock(), 2000, "IDLE: Waiting for new goal on /goal_pose...");
+      |                                                       [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In lambda function:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:186:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kc[m[K’ was not declared in this scope
+  186 |             [01;31m[KRCLCPP_INFO_THROTTLE[m[K(this->get_logger(), *this->get_clock(), 2000, "IDLE: Waiting for new goal on /goal_pose...");
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:1[m[K:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In function ‘[01m[Kvoid gpsCallback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:186:34:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  186 |             RCLCPP_INFO_THROTTLE([01;31m[Kthis[m[K->get_logger(), *this->get_clock(), 2000, "IDLE: Waiting for new goal on /goal_pose...");
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:186:34:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  186 |             RCLCPP_INFO_THROTTLE([01;31m[Kthis[m[K->get_logger(), *this->get_clock(), 2000, "IDLE: Waiting for new goal on /goal_pose...");
+      |                                  [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:190:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+  190 |         if ([01;31m[Kmode_[m[K == AVOIDING) return;
+      |             [01;31m[K^~~~~[m[K
+      |             [32m[Kmode_t[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:190:22:[m[K [01;31m[Kerror: [m[K‘[01m[KAVOIDING[m[K’ was not declared in this scope
+  190 |         if (mode_ == [01;31m[KAVOIDING[m[K) return;
+      |                      [01;31m[K^~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:192:72:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_lat_[m[K’ was not declared in this scope
+  192 |         double dist = haversineDistance(msg->latitude, msg->longitude, [01;31m[Ktarget_lat_[m[K, target_lon_);
+      |                                                                        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:192:85:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_lon_[m[K’ was not declared in this scope
+  192 |       double dist = haversineDistance(msg->latitude, msg->longitude, target_lat_, [01;31m[Ktarget_lon_[m[K);
+      |                                                                                   [01;31m[K^~~~~~~~~~~[m[K
+
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:192:23:[m[K [01;31m[Kerror: [m[K‘[01m[KhaversineDistance[m[K’ was not declared in this scope
+  192 |         double dist = [01;31m[KhaversineDistance[m[K(msg->latitude, msg->longitude, target_lat_, target_lon_);
+      |                       [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:194:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_reached_[m[K’ was not declared in this scope
+  194 |             [01;31m[Ktarget_reached_[m[K = true;
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:195:13:[m[K [01;31m[Kerror: [m[K‘[01m[KpublishVelocity[m[K’ was not declared in this scope
+  195 |             [01;31m[KpublishVelocity[m[K(0.0, 0.0);
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:1[m[K:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:196:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  196 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "SUCCESS: Goal Reached!");
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:196:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:196:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  196 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "SUCCESS: Goal Reached!");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:1[m[K:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:196:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  196 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "SUCCESS: Goal Reached!");
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:196:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  196 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "SUCCESS: Goal Reached!");
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:200:49:[m[K [01;31m[Kerror: [m[K‘[01m[KcalculateHeading[m[K’ was not declared in this scope
+  200 |         double desired_heading = normalizeAngle([01;31m[KcalculateHeading[m[K(msg->latitude, msg->longitude, target_lat_, target_lon_));
+      |                                                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:200:34:[m[K [01;31m[Kerror: [m[K‘[01m[KnormalizeAngle[m[K’ was not declared in this scope
+  200 |         double desired_heading = [01;31m[KnormalizeAngle[m[K(calculateHeading(msg->latitude, msg->longitude, target_lat_, target_lon_));
+      |                                  [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:201:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_heading_[m[K’ was not declared in this scope
+  201 |         double angular_error = normalizeAngle(desired_heading - [01;31m[Kcurrent_heading_[m[K);
+      |                                                                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:1[m[K:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:203:30:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  203 |         RCLCPP_INFO_THROTTLE([01;31m[Kthis[m[K->get_logger(), *this->get_clock(), 1000,
+      |                              [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:203:30:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:203:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  203 |         [01;31m[KRCLCPP_INFO_THROTTLE[m[K(this->get_logger(), *this->get_clock(), 1000,
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:203:51:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  203 |         RCLCPP_INFO_THROTTLE(this->get_logger(), *[01;31m[Kthis[m[K->get_clock(), 1000,
+      |                                                   [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In lambda function:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:203:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kc[m[K’ was not declared in this scope
+  203 |         [01;31m[KRCLCPP_INFO_THROTTLE[m[K(this->get_logger(), *this->get_clock(), 1000,
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:1[m[K:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K In function ‘[01m[Kvoid gpsCallback(sensor_msgs::msg::NavSatFix_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:203:30:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  203 |         RCLCPP_INFO_THROTTLE([01;31m[Kthis[m[K->get_logger(), *this->get_clock(), 1000,
+      |                              [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:203:30:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  203 |         RCLCPP_INFO_THROTTLE([01;31m[Kthis[m[K->get_logger(), *this->get_clock(), 1000,
+      |                              [01;31m[K^~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:206:9:[m[K [01;31m[Kerror: [m[K‘[01m[KpublishVelocity[m[K’ was not declared in this scope
+  206 |         [01;31m[KpublishVelocity[m[K(0.4, std::clamp(angular_error * 1.5, -1.0, 1.0));
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:[m[K At global scope:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:209:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kpublic[m[K’
+  209 | [01;31m[Kpublic[m[K:
+      | [01;31m[K^~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:230:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  230 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/memory:64[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:1[m[K:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = AutonomousNavigation; _Args = {}; _Tp = AutonomousNavigation][m[K’:
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = AutonomousNavigation; _Args = {}; _Tp = AutonomousNavigation; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<AutonomousNavigation>][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = AutonomousNavigation; _Alloc = std::allocator<AutonomousNavigation>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = AutonomousNavigation; _Alloc = std::allocator<AutonomousNavigation>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<AutonomousNavigation>; _Args = {}; _Tp = AutonomousNavigation; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<AutonomousNavigation>; _Args = {}; _Tp = AutonomousNavigation][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = AutonomousNavigation; _Alloc = std::allocator<AutonomousNavigation>; _Args = {}][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = AutonomousNavigation; _Args = {}][m[K’
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:234:56:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[KAutonomousNavigation::AutonomousNavigation()[m[K’
+  162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:19:7:[m[K [01;36m[Knote: [m[K‘[01m[KAutonomousNavigation::AutonomousNavigation()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+   19 | class [01;36m[KAutonomousNavigation[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:19:7:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/gps_navigator.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+ 1294 |   [01;36m[KNode[m[K(
+      |   [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+  101 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+   89 |   explicit [01;36m[KNode[m[K(
+      |            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+gmake[2]: *** [CMakeFiles/gps_navigator.dir/build.make:76: CMakeFiles/gps_navigator.dir/src/gps_navigator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/gps_navigator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

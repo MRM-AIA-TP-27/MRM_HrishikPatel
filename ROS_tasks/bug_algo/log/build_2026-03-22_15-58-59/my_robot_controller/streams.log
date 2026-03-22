@@ -1,0 +1,37 @@
+[0.008s] Invoking command in '/home/hrishik/robot_ws/build/my_robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8
+[0.045s] [35m[1mConsolidate compiler generated dependencies of target obstacle_detector[0m
+[0.059s] [ 50%] Built target gps_navigator
+[0.062s] [ 75%] [32mBuilding CXX object CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o[0m
+[3.702s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:[m[K In member function ‘[01m[Kvoid ObstacleDetectionNode::processPointCloud()[m[K’:
+[3.703s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:48:22:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Klatest_msg_[m[K’?
+[3.703s]    48 |     pcl::fromROSMsg(*[01;31m[Klatest_msg[m[K, *cloud);
+[3.703s]       |                      [01;31m[K^~~~~~~~~~[m[K
+[3.703s]       |                      [32m[Klatest_msg_[m[K
+[3.725s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:94:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kpcl[m[K’
+[3.725s]    94 |     [01;31m[Kpcl[m[K::PointCloud<pcl::PointXYZ>::Ptr clustered_cloud(new pcl::PointCloud<pcl::PointXYZ>);
+[3.725s]       |     [01;31m[K^~~[m[K
+[3.738s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:97:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kclustered_cloud[m[K’ was not declared in this scope
+[3.738s]    97 |             [01;31m[Kclustered_cloud[m[K->points.push_back(cloud_no_ground->points[idx]);
+[3.738s]       |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.751s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:101:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclustered_cloud[m[K’ was not declared in this scope
+[3.751s]   101 |     [01;31m[Kclustered_cloud[m[K->width = clustered_cloud->points.size();
+[3.751s]       |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.759s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:107:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_msg[m[K’ was not declared in this scope
+[3.759s]   107 |     output.header = [01;31m[Kcloud_msg[m[K->header;
+[3.759s]       |                     [01;31m[K^~~~~~~~~[m[K
+[3.764s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:144:35:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Ksensor_msgs::msg::PointCloud2 output[m[K’
+[3.764s]   144 |     sensor_msgs::msg::PointCloud2 [01;31m[Koutput[m[K;
+[3.764s]       |                                   [01;31m[K^~~~~~[m[K
+[3.764s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:105:35:[m[K [01;36m[Knote: [m[K‘[01m[Ksensor_msgs::msg::PointCloud2 output[m[K’ previously declared here
+[3.764s]   105 |     sensor_msgs::msg::PointCloud2 [01;36m[Koutput[m[K;
+[3.764s]       |                                   [01;36m[K^~~~~~[m[K
+[3.764s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:111:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.764s]   111 |     double [01;35m[Kmin_distance[m[K = std::numeric_limits<double>::max();
+[3.764s]       |            [01;35m[K^~~~~~~~~~~~[m[K
+[3.764s] [01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:112:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kobstacle_within_range[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.764s]   112 |     bool [01;35m[Kobstacle_within_range[m[K = false;
+[3.764s]       |          [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[5.891s] gmake[2]: *** [CMakeFiles/obstacle_detector.dir/build.make:76: CMakeFiles/obstacle_detector.dir/src/obstacle_detector.cpp.o] Error 1
+[5.891s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/obstacle_detector.dir/all] Error 2
+[5.891s] gmake: *** [Makefile:146: all] Error 2
+[5.893s] Invoked command in '/home/hrishik/robot_ws/build/my_robot_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hrishik/robot_ws/build/my_robot_controller -- -j8 -l8

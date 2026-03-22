@@ -1,0 +1,7 @@
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:[m[K In member function ‘[01m[Kvoid ObstacleDetectionNode::processPointCloud()[m[K’:
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:111:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kmin_distance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  111 |     double [01;35m[Kmin_distance[m[K = std::numeric_limits<double>::max();
+      |            [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/hrishik/robot_ws/src/my_robot_controller/src/obstacle_detector.cpp:112:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kobstacle_within_range[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  112 |     bool [01;35m[Kobstacle_within_range[m[K = false;
+      |          [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
